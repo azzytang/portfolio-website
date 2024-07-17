@@ -10,10 +10,9 @@ const Navbar = () => {
           <div className="Navbar-logo">
             <img
               className="Navbar-logo1"
-              src="flower_logo.png"
+              src="azalea_flower.png"
               alt="logo"
             ></img>
-            <p>Azalea Tang</p>
           </div>
         </Link>
       </div>
@@ -45,6 +44,9 @@ const Navbar = () => {
             src="linkedin_icon.png"
             alt="linkedin"
           ></img>
+        </Link>
+        <Link to="https://github.com/azzytang" target="_blank" rel="noreferrer">
+          <img src="github_logo.png" alt="github"></img>
         </Link>
       </div>
     </div>

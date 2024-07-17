@@ -5,7 +5,7 @@ a {
 .Navbar {
   display: flex;
   align-items: center;
-  background-image: url("clouds_background.jpg");
+
   padding: 1.5% 4.5%;
   font-family: var(--font-family);
   font-size: x-large;
@@ -22,9 +22,9 @@ a {
   /* color: #fff;
   text-shadow: 1.2px 1.2px 0 #000, -1.2px 1.2px 0 #000, -1.2px -1.2px 0 #000,
     1.2px -1.2px 0 #000; */
-  color: #fff;
+  /* color: #fff;
   text-shadow: 1.2px 1.2px 2px #000, -1.2px 1.2px 2px #000, -1.2px -1.2px 0 #000,
-    1.2px -1.2px 0 #000;
+    1.2px -1.2px 0 #000; */
 }
 
 .Navbar-social {

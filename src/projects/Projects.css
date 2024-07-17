@@ -11,3 +11,11 @@
   font-size: 50px;
   font-family: var(--font-family);
 }
+
+.Projects-container {
+}
+
+.Projects-container img {
+  width: 40rem;
+  border-radius: 15px;
+}
