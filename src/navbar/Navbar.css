@@ -1,0 +1,163 @@
+a {
+  text-decoration: none;
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  background-image: url("clouds_background.jpg");
+  padding: 1.5% 4.5%;
+  font-family: var(--font-family);
+  font-size: x-large;
+  min-height: 10vh;
+  /* outline text
+  -webkit-text-stroke: 1.2px black; 
+  or this support all browser
+  color: #fff;
+   text-shadow:
+    3px 3px 2px #000,
+    -3px 3px 2px #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000; */
+  /* color: #fff;
+  text-shadow: 1.2px 1.2px 0 #000, -1.2px 1.2px 0 #000, -1.2px -1.2px 0 #000,
+    1.2px -1.2px 0 #000; */
+  color: #fff;
+  text-shadow: 1.2px 1.2px 2px #000, -1.2px 1.2px 2px #000, -1.2px -1.2px 0 #000,
+    1.2px -1.2px 0 #000;
+}
+
+.Navbar-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Navbar-social img {
+  width: 35px;
+  margin-left: 27px;
+}
+
+.Navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Navbar-logo {
+  font-size: 30px;
+
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.Navbar-logo1 {
+  width: 5rem;
+  margin-right: 1.2rem;
+}
+.Navbar-logo2 {
+  width: 13rem;
+}
+.Navbar-menu {
+  margin-left: 1rem;
+
+  display: none;
+  position: relative;
+}
+
+.Navbar-menu {
+  color: var(--color-black);
+}
+.Navbar-menu_icon {
+  cursor: pointer;
+}
+
+.Navbar-links_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Navbar-menu_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 1000;
+
+  text-align: end;
+  background: var(--color-black);
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  margin-top: 1rem;
+  min-width: 210px;
+}
+
+.Navbar-logo p,
+.Navbar-menu_link,
+.Navbar-links_container p,
+.Navbar-menu_container p,
+.Navbar-social p {
+  color: white;
+  font-family: var(--font-family);
+  margin: 0 1rem 0.3rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.Navbar-menu_link:hover,
+.Navbar-links_container p:hover,
+.Navbar-social p:hover {
+  color: var(--color-pink);
+}
+
+.Navbar-links_container_ftc {
+  font-size: medium;
+}
+
+@media screen and (max-width: 1050px) {
+  .Navbar-links_container {
+    display: none;
+  }
+  .Navbar-social {
+    display: none;
+  }
+  .Navbar-menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .Navbar-social img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Navbar {
+    padding: 2rem;
+  }
+
+  .Navbar-menu_container {
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Navbar-logo1 {
+    width: 2.5rem;
+  }
+  .Navbar-logo2 {
+    width: 7rem;
+  }
+}
