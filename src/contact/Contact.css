@@ -23,11 +23,12 @@
   width: 3rem;
   height: 3rem;
   margin: 1.5rem 1rem 0 0;
+  padding: 0.5rem;
 }
 
 .Contact-info img:hover {
   background-color: rgb(247, 215, 215, 0.7);
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .Contact-social {

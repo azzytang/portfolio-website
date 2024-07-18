@@ -10,8 +10,10 @@
 
 .Projects-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .Projects-container h2 {
@@ -23,28 +25,10 @@
   border-radius: 20px;
 }
 
-.Projects-stickman1 {
-  position: relative;
-  float: left;
-}
-
-.Projects-stickman2 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: none;
-}
-
-.Projects-stickman2:hover {
-  display: block;
-}
-.Projects-stickman1:hover {
-  display: none;
-}
-
 .imageBox {
   position: relative;
   float: left;
+  margin: 5rem;
 }
 
 .imageBox .hoverImg {
@@ -58,17 +42,14 @@
   display: block;
 }
 
-.imageBox:hover .hoverImg {
-  display: block;
-}
-
 .imageBox .hoverImg div {
   display: flex;
   align-items: center;
   position: absolute;
   flex-direction: column;
   left: 0;
-
+  align-items: center;
+  text-align: center;
   top: 0;
   margin: 0 0 0 0;
   background-color: rgba(0, 0, 0, 0.335);
@@ -80,11 +61,13 @@
 .imageBox .hoverImg div h2 {
   font-size: 70px;
   margin: 5rem 0 0 0;
+  line-height: normal;
 }
 
 .imageBox .hoverImg div p {
   font-size: 50px;
   margin: 0 0 0 0;
+  color: white;
 }
 
 .imageBox .hoverImg {

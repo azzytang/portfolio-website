@@ -19,13 +19,22 @@ const Navbar = () => {
       </div>
       <div className="Navbar-social">
         <Link to="/about">
-          <p>about</p>
+          <div className="Navbar-link">
+            <p>about</p>
+            <img src="navbar_highlight.png" style={{ width: "8rem" }}></img>
+          </div>
         </Link>
         <Link to="/contact">
-          <p>contact</p>
+          <div className="Navbar-link">
+            <p>contact</p>
+            <img src="navbar_highlight2.png" style={{ width: "10rem" }}></img>
+          </div>
         </Link>
         <Link to="/projects">
-          <p>projects</p>
+          <div className="Navbar-link">
+            <p>projects</p>
+            <img src="navbar_highlight3.png" style={{ width: "10rem" }}></img>
+          </div>
         </Link>
 
         <Link

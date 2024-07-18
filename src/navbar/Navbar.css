@@ -37,6 +37,30 @@ a {
   margin-left: 27px;
 }
 
+.Navbar-link {
+  position: relative;
+  float: left;
+}
+
+.Navbar-link img {
+  z-index: 0;
+  position: absolute;
+  left: -1.6rem;
+  top: 0.1rem;
+  display: none;
+
+  /* left: 0;
+  top: 0; */
+}
+.Navbar-link p {
+  z-index: 100;
+  position: relative;
+  float: right;
+}
+.Navbar-link:hover img {
+  display: block;
+}
+
 .Navbar-links {
   flex: 1;
   display: flex;
@@ -95,9 +119,6 @@ a {
 }
 
 .Navbar-logo p,
-.Navbar-menu_link,
-.Navbar-links_container p,
-.Navbar-menu_container p,
 .Navbar-social p {
   color: white;
   margin: 0 1.5rem 0.3rem;
@@ -105,11 +126,11 @@ a {
   text-decoration: none;
 }
 
-.Navbar-menu_link:hover,
-.Navbar-links_container p:hover,
+/* .Navbar-links_container p:hover,
 .Navbar-social p:hover {
-  color: var(--color-pink);
-}
+  background-color: rgb(247, 215, 215, 0.7);
+  border-radius: 30px;
+} */
 
 .Navbar-links_container_ftc {
   font-size: medium;

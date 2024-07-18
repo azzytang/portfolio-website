@@ -1,0 +1,29 @@
+.StickmanLife {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.StickmanLife iframe {
+  border: none;
+}
+
+.StickmanLife h1 {
+  font-size: 80px;
+  line-height: 3rem;
+  margin-bottom: 0;
+}
+.StickmanLife h3 {
+  font-size: 40px;
+  line-height: 1rem;
+  margin-bottom: 0;
+}
+
+.StickmanLife h2 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.StickmanLife-desc {
+  font-size: 40px;
+  max-width: 60vw;
+}
