@@ -1,21 +1,127 @@
 .Projects {
   display: flex;
-  background-color: var(--color-light-gray);
   flex-direction: column;
   align-items: center;
 }
 
 .Projects h1 {
-  margin-top: 5rem;
-  font-weight: normal;
-  font-size: 50px;
-  font-family: var(--font-family);
+  font-size: 80px;
 }
 
 .Projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Projects-container h2 {
+  color: white;
+  font-size: 50px;
 }
 
 .Projects-container img {
+  border-radius: 20px;
+}
+
+.Projects-stickman1 {
+  position: relative;
+  float: left;
+}
+
+.Projects-stickman2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.Projects-stickman2:hover {
+  display: block;
+}
+.Projects-stickman1:hover {
+  display: none;
+}
+
+.imageBox {
+  position: relative;
+  float: left;
+}
+
+.imageBox .hoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+}
+
+.imageBox .hoverImg div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  left: 0;
+
+  top: 0;
+  margin: 0 0 0 0;
+  background-color: rgba(0, 0, 0, 0.335);
   width: 40rem;
-  border-radius: 15px;
+  height: 30.923rem;
+  border-radius: 20px;
+}
+
+.imageBox .hoverImg div h2 {
+  font-size: 70px;
+  margin: 5rem 0 0 0;
+}
+
+.imageBox .hoverImg div p {
+  font-size: 50px;
+  margin: 0 0 0 0;
+}
+
+.imageBox .hoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+}
+
+.imageBox .hoverImg div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  left: 0;
+
+  top: 0;
+  margin: 0 0 0 0;
+  background-color: rgba(0, 0, 0, 0.335);
+
+  border-radius: 20px;
+}
+
+.imageBox .hoverImg div h2 {
+  font-size: 70px;
+  margin: 5rem 0 0 0;
+}
+
+.imageBox .hoverImg div p {
+  font-size: 50px;
+  margin: 0 0 0 0;
 }

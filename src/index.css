@@ -11,12 +11,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --font-family: Goo Font;
+  --font-family: Micu Font;
   --color-pink: rgb(247, 215, 215);
 }
 @font-face {
-  font-family: Goo Font;
-  src: url(goo.regular.ttf);
+  font-family: Micu Font;
+  src: url(BrownBagLunch.ttf);
   /*url(gogono-cocoa-mochi.regular.ttf);*/
 }
 

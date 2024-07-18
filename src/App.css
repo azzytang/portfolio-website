@@ -1,3 +1,4 @@
 .App {
   background-image: url("clouds_background.jpg");
+  font-family: var(--font-family);
 }

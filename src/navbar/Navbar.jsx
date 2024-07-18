@@ -13,18 +13,19 @@ const Navbar = () => {
               src="azalea_flower.png"
               alt="logo"
             ></img>
+            <p>AT</p>
           </div>
         </Link>
       </div>
       <div className="Navbar-social">
         <Link to="/about">
-          <p>About</p>
+          <p>about</p>
         </Link>
         <Link to="/contact">
-          <p>Contact</p>
+          <p>contact</p>
         </Link>
         <Link to="/projects">
-          <p>Projects</p>
+          <p>projects</p>
         </Link>
 
         <Link
@@ -40,7 +41,7 @@ const Navbar = () => {
           rel="noreferrer"
         >
           <img
-            style={{ width: "2.5rem" }}
+            style={{ width: "2.1rem" }}
             src="linkedin_icon.png"
             alt="linkedin"
           ></img>

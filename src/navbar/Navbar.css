@@ -7,8 +7,7 @@ a {
   align-items: center;
 
   padding: 1.5% 4.5%;
-  font-family: var(--font-family);
-  font-size: x-large;
+  font-size: 45px;
   min-height: 10vh;
   /* outline text
   -webkit-text-stroke: 1.2px black; 
@@ -46,8 +45,6 @@ a {
 }
 
 .Navbar-logo {
-  font-size: 30px;
-
   margin-right: 2rem;
   display: flex;
   align-items: center;
@@ -103,8 +100,7 @@ a {
 .Navbar-menu_container p,
 .Navbar-social p {
   color: white;
-  font-family: var(--font-family);
-  margin: 0 1rem 0.3rem;
+  margin: 0 1.5rem 0.3rem;
   cursor: pointer;
   text-decoration: none;
 }

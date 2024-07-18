@@ -1,5 +1,4 @@
 .Footer {
-  background-color: var(--color-black);
   padding: max(3rem) 3%;
   display: flex;
   flex-direction: row;
