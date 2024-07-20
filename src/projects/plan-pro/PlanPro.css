@@ -1,0 +1,11 @@
+.PlanPro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PlanPro h1 {
+  font-size: 80px;
+  line-height: 3rem;
+  margin-bottom: 0;
+}

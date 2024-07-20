@@ -7,6 +7,7 @@ import Footer from "./footer/Footer";
 import Projects from "./projects/Projects";
 import StickmanLife from "./projects/stickman-life/StickmanLife";
 import SmartScan from "./projects/smart-scan/SmartScan";
+import PlanPro from "./projects/plan-pro/PlanPro";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -25,6 +26,7 @@ function App() {
             path="/projects/smart-scan-attendance"
             element={<SmartScan />}
           />
+          <Route path="/projects/plan-pro" element={<PlanPro />} />
         </Routes>
         <Footer />
       </div>

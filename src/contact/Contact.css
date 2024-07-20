@@ -19,16 +19,36 @@
   align-items: center;
 }
 
-.Contact-info img {
+.Contact-email {
+  position: relative;
+  float: left;
+}
+
+.email-icon {
   width: 3rem;
   height: 3rem;
   margin: 1.5rem 1rem 0 0;
   padding: 0.5rem;
+  z-index: 100;
+  position: relative;
+  float: right;
 }
 
+.email-highlight {
+  width: 7rem;
+  z-index: 0;
+  position: absolute;
+  left: -1.6rem;
+  top: 0.1rem;
+  display: none;
+}
+
+.Contact-email:hover .email-highlight {
+  display: block;
+}
 .Contact-info img:hover {
-  background-color: rgb(247, 215, 215, 0.7);
-  border-radius: 30px;
+  /* background-color: rgb(247, 215, 215, 0.7);
+  border-radius: 30px; */
 }
 
 .Contact-social {

@@ -1,0 +1,33 @@
+.SmartScan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SmartScan h1 {
+  font-size: 80px;
+  line-height: 3rem;
+  margin-bottom: 0;
+}
+.SmartScan h3 {
+  font-size: 40px;
+  line-height: 1rem;
+  margin-bottom: 3rem;
+}
+
+.SmartScan-button {
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: solid;
+  border-width: 3px;
+  font-size: 40px;
+  margin: 1.3rem 0 0 0;
+  padding: 0 22px 18px 22px;
+}
+
+.SmartScan-button:hover {
+  border-color: var(--color-pink);
+  color: var(--color-pink);
+  background-color: rgba(255, 255, 255, 0.1);
+}

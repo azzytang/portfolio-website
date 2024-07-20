@@ -8,11 +8,14 @@ const Contact = () => {
       <h1>Contact</h1>
       <div className="Contact-info">
         <a href="mailto:azzytang@gmail.com">
-          <img
-            className="email-icon_hover"
-            src="email_icon.png"
-            alt="email icon"
-          ></img>
+          <div className="Contact-email">
+            <img
+              className="email-icon"
+              src="email_icon.png"
+              alt="email icon"
+            ></img>
+            <img className="email-highlight" src="email_highlight.png"></img>
+          </div>
         </a>
         <p>azzytang@gmail.com</p>
       </div>

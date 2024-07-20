@@ -17,12 +17,13 @@ const Footer = () => {
             alt="linkedin"
           ></img>
         </Link>
-        <a href="">
-          <img className="Footer-icons" src="" alt="email"></img>
-        </a>
-        <a href="">
-          <img className="Footer-icons" src="" alt="phone"></img>
-        </a>
+        <Link to="https://github.com/azzytang" target="_blank" rel="noreferrer">
+          <img
+            className="Footer-icons"
+            src="github_logo.png"
+            alt="github"
+          ></img>
+        </Link>
       </div>
     </div>
   );

@@ -6,7 +6,13 @@ const About = () => {
     <div className="About">
       <h1>About</h1>
       <div className="About-container">
-        <img src="azalea_nobg2.png" alt="me"></img>
+        <div>
+          <img className="About-image" src="azalea1.png" alt="me"></img>
+          <div className="About-caption">
+            <p>1st @ digital divas comp</p>
+            <img className="arrow" src="about_arrow.png"></img>
+          </div>
+        </div>
         <div>
           <p>
             Hi, I am a junior in highschool attending the Texas Academy of Math

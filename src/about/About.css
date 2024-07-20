@@ -11,14 +11,29 @@
 
 .About p {
   font-size: 40px;
-  max-width: 60vw;
+  max-width: 50vw;
 }
 
-.About img {
-  height: 50rem;
+.About-image {
+  height: 35rem;
+  margin: 0 10rem 0 0;
+  border-radius: 10px;
 }
 
 .About-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.arrow {
+  position: absolute;
+  left: 12rem;
+  top: -14em;
+  width: 8rem;
+  height: 17rem;
+}
+
+.About-caption {
+  position: relative;
 }
