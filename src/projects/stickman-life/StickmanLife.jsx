@@ -29,6 +29,7 @@ const StickmanLife = () => {
           expecting to finish it this summer (2024). After finishing the basic
           functionality of the game, I plan to release it on Steam free of cost.
         </p>
+        {/* <img src="/text_bg.png"></img> */}
       </div>
     </div>
   );

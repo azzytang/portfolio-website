@@ -5,6 +5,7 @@
 }
 .StickmanLife iframe {
   border: none;
+  margin: 0 0 10rem 0;
 }
 
 .StickmanLife h1 {
@@ -26,4 +27,21 @@
 .StickmanLife-desc {
   font-size: 40px;
   max-width: 60vw;
+  position: relative;
+  float: left;
+}
+
+.StickmanLife-desc p {
+  z-index: 100;
+  margin: 1rem 0 0 0;
+  position: relative;
+  float: left;
+}
+
+.StickmanLife-desc img {
+  max-width: 70vw;
+  position: absolute;
+  left: -2.6rem;
+  top: -3rem;
+  z-index: 0;
 }
