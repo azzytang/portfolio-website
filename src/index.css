@@ -11,13 +11,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --font-family: Micu Font;
+  --font-family: "BrownBagLunch";
   --color-pink: rgb(247, 215, 215);
 }
 @font-face {
-  font-family: Micu Font;
-  src: url(BrownBagLunch.ttf);
-  /*url(gogono-cocoa-mochi.regular.ttf);*/
+  font-family: "BrownBagLunch";
+  src: url("/Users/azzytang/portfolio-website/public/BrownBagLunch.woff2")
+      format("woff2"),
+    url("/Users/azzytang/portfolio-website/public/BrownBagLunch.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {

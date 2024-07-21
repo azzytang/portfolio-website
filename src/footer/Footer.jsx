@@ -7,10 +7,18 @@ const Footer = () => {
     <div className="Footer">
       <div className="Footer-attributions"></div>
       <div className="Footer-contact">
-        <Link to="" target="_blank" rel="noreferrer">
+        <Link
+          to="https://www.instagram.com/azzytang?igsh=MThnbHNrczBsY2F3&utm_source=qr"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img className="Footer-insta" src="instagram_icon.png" alt="ig"></img>
         </Link>
-        <Link to="" target="_blank" rel="noreferrer">
+        <Link
+          to="https://www.linkedin.com/in/azalea-tang-7474a7298"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             className="Footer-icons"
             src="linkedin_icon.png"
