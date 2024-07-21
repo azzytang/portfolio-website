@@ -97,12 +97,6 @@ a {
   cursor: pointer;
 }
 
-.Navbar-links_container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .Navbar-menu_container {
   display: flex;
   justify-content: flex-start;
@@ -111,13 +105,29 @@ a {
   z-index: 1000;
 
   text-align: end;
-  background: var(--color-black);
-  padding: 2rem;
+  background-color: rgb(160, 193, 235);
   position: absolute;
   right: 0;
-  top: 40px;
-  margin-top: 1rem;
-  min-width: 210px;
+  top: 5rem;
+  width: 20rem;
+  padding: 2rem 0 2rem 0;
+}
+.Navbar-menu_container hr {
+  color: white;
+  width: 15rem;
+  border-color: white;
+  border: solid;
+  border-radius: 20px;
+}
+.Navbar-menu_link {
+  color: white;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Navbar-menu_container p {
+  margin: 0 0 1rem 3rem;
+  line-height: 50px;
 }
 
 .Navbar-logo p,
@@ -126,16 +136,6 @@ a {
   margin: 0 1.5rem 0.3rem;
   cursor: pointer;
   text-decoration: none;
-}
-
-/* .Navbar-links_container p:hover,
-.Navbar-social p:hover {
-  background-color: rgb(247, 215, 215, 0.7);
-  border-radius: 30px;
-} */
-
-.Navbar-links_container_ftc {
-  font-size: medium;
 }
 
 @media screen and (max-width: 1050px) {
@@ -166,17 +166,19 @@ a {
   .Navbar {
     padding: 2rem;
   }
-
-  .Navbar-menu_container {
-    top: 20px;
-  }
 }
 
-@media screen and (max-width: 450px) {
-  .Navbar-logo1 {
-    width: 2.5rem;
+@media screen and (max-width: 385px) {
+  .Navbar-menu_container {
+    right: 0;
+    top: 5rem;
+    width: 16rem;
   }
-  .Navbar-logo2 {
-    width: 7rem;
+  .Navbar-menu_container hr {
+    color: white;
+    width: 13rem;
+    border-color: white;
+    border: solid;
+    border-radius: 20px;
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { Link } from "react-router-dom";
+import { IoMailOutline } from "react-icons/io5";
 
 const Contact = () => {
   return (
@@ -9,11 +10,13 @@ const Contact = () => {
       <div className="Contact-info">
         <a href="mailto:azzytang@gmail.com">
           <div className="Contact-email">
-            <img
+            {/* <img
               className="email-icon"
               src="email_icon.png"
               alt="email icon"
-            ></img>
+            ></img> */}
+            <IoMailOutline className="email-icon" color="white" size={50} />
+
             <img className="email-highlight" src="email_highlight.png"></img>
           </div>
         </a>

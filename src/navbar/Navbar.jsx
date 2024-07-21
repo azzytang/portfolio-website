@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { AiOutlineMenu } from "react-icons/ai";
+import { RiArrowUpWideFill } from "react-icons/ri";
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  const handleLinkClick = () => {
+    setToggleMenu(false);
+  };
+
   return (
     <div className="Navbar">
       <div className="Navbar-links">
@@ -58,6 +66,56 @@ const Navbar = () => {
         <Link to="https://github.com/azzytang" target="_blank" rel="noreferrer">
           <img src="github_logo.png" alt="github"></img>
         </Link>
+      </div>
+      <div className="Navbar-menu">
+        {toggleMenu ? (
+          <RiArrowUpWideFill
+            className="Navbar-menu_icon"
+            color="white"
+            size={27}
+            onClick={() => setToggleMenu(false)}
+          />
+        ) : (
+          <AiOutlineMenu
+            className="Navbar-menu_icon"
+            color="white"
+            size={27}
+            onClick={() => setToggleMenu(true)}
+          />
+        )}
+        {toggleMenu && (
+          <div className="Navbar-menu_container">
+            <p>
+              <Link
+                className="Navbar-menu_link"
+                to="/about"
+                onClick={handleLinkClick}
+              >
+                About
+              </Link>
+            </p>
+            <hr></hr>
+            <p>
+              <Link
+                className="Navbar-menu_link"
+                to="/contact"
+                onClick={handleLinkClick}
+              >
+                Contact
+              </Link>
+            </p>
+            <hr></hr>
+            <p>
+              <Link
+                className="Navbar-menu_link"
+                to="/projects"
+                onClick={handleLinkClick}
+              >
+                Projects
+              </Link>
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

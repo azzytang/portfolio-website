@@ -53,3 +53,51 @@
   border: none;
   margin: 0 0 3rem 0;
 }
+
+@media screen and (max-width: 1000px) {
+  .PlanPro-desc {
+    font-size: 30px;
+
+    padding: 1rem 2rem 2rem 2rem;
+  }
+
+  .PlanPro iframe {
+    width: 550px;
+    height: 300px;
+  }
+  .PlanPro h1 {
+    font-size: 60px;
+  }
+  .PlanPro h2 {
+    font-size: 35px;
+  }
+  .PlanPro h3 {
+    font-size: 35px;
+  }
+  .PlanPro-button {
+    border-width: 3px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .PlanPro iframe {
+    width: 400px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .PlanPro iframe {
+    width: 350px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .PlanPro-desc {
+    font-size: 20px;
+  }
+  .PlanPro iframe {
+    width: 270px;
+    height: 150px;
+  }
+}
