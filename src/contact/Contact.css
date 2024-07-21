@@ -60,3 +60,12 @@
 .Contact-social img {
   width: 35px;
 }
+
+@media screen and (max-width: 1000px) {
+  .Contact h1 {
+    font-size: 60px;
+  }
+  .Contact p {
+    font-size: 35px;
+  }
+}

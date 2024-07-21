@@ -13,7 +13,7 @@ const About = () => {
             <img className="arrow" src="about_arrow.png"></img>
           </div>
         </div>
-        <div>
+        <div className="About-desc">
           <p>
             Hi, I am a junior in highschool attending the Texas Academy of Math
             and Science (TAMS) on the Computer Science track.
@@ -25,14 +25,10 @@ const About = () => {
             real that people can experience and interact with. You can see the
             projects I have finished or are working on here.
           </p>
+
           <p>
-            The coding language I am most comforatble with is Python, as it is
-            my first language. I also know Java, Javascript, C++, CSS, HTML, and
-            Swift.
-          </p>
-          <p>
-            Aside from coding, I also love to weightlift, cook, play sports, and
-            hangout with friends.
+            Aside from coding, I also love to weightlift, bike, cook, play
+            sports, and hangout with friends.
           </p>
         </div>
       </div>

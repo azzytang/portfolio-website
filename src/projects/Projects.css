@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 5rem 0 5rem;
 }
 
 .Projects h1 {
@@ -14,11 +15,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-.Projects-container h2 {
-  color: white;
-  font-size: 50px;
 }
 
 .Projects-container img {
@@ -53,8 +49,7 @@
   top: 0;
   margin: 0 0 0 0;
   background-color: rgba(0, 0, 0, 0.335);
-  width: 40rem;
-  height: 30.923rem;
+
   border-radius: 20px;
 }
 
@@ -62,6 +57,7 @@
   font-size: 70px;
   margin: 5rem 0 0 0;
   line-height: normal;
+  color: white;
 }
 
 .imageBox .hoverImg div p {
@@ -107,4 +103,72 @@
 .imageBox .hoverImg div p {
   font-size: 50px;
   margin: 0 0 0 0;
+}
+
+.Projects-stickman-life {
+  width: 40rem;
+  height: 30.923rem;
+}
+
+.Projects-robotics {
+  width: 40rem;
+  height: 25.763rem;
+}
+
+.Projects-smart-scan {
+  width: 40rem;
+  height: 30.344rem;
+}
+
+.Projects-massage {
+  width: 40rem;
+  height: 25.174rem;
+}
+
+.Projects-plan-pro {
+  width: 30rem;
+  height: 29.468rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .Projects-stickman-life {
+    width: 25rem;
+    height: 19.327rem;
+  }
+
+  .Projects-robotics {
+    width: 25rem;
+    height: 16.102rem;
+  }
+
+  .Projects-smart-scan {
+    width: 25rem;
+    height: 18.965rem;
+  }
+
+  .Projects-massage {
+    width: 25rem;
+    height: 15.734rem;
+  }
+  .Projects-plan-pro {
+    width: 25rem;
+    height: 24.56rem;
+  }
+
+  .imageBox {
+    margin: 1rem;
+  }
+
+  .Projects h1 {
+    font-size: 60px;
+  }
+
+  .imageBox .hoverImg div h2 {
+    font-size: 50px;
+    margin: 3rem 0 0 0;
+  }
+
+  .imageBox .hoverImg div p {
+    font-size: 30px;
+  }
 }

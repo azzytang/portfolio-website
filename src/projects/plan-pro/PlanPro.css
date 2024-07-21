@@ -9,3 +9,47 @@
   line-height: 3rem;
   margin-bottom: 0;
 }
+
+.PlanPro h3 {
+  font-size: 40px;
+  line-height: 1rem;
+  margin-bottom: 3rem;
+}
+
+.PlanPro h2 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.PlanPro-button {
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: solid;
+  border-width: 3px;
+  font-size: 40px;
+  margin: 1.3rem 0 0 0;
+  padding: 0 22px 18px 22px;
+}
+
+.PlanPro-button:hover {
+  border-color: var(--color-pink);
+  color: var(--color-pink);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.PlanPro-desc {
+  font-size: 40px;
+  max-width: 60vw;
+
+  background-color: rgb(160, 193, 235);
+  padding: 2rem 3rem 3rem 3rem;
+}
+
+.PlanPro-desc p {
+  margin: 0;
+}
+
+.PlanPro iframe {
+  border: none;
+  margin: 0 0 3rem 0;
+}

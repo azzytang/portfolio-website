@@ -27,24 +27,29 @@
 .StickmanLife-desc {
   font-size: 40px;
   max-width: 60vw;
-  position: relative;
-  float: left;
+  /* position: relative;
+  float: left; */
+  background-color: rgb(160, 193, 235);
+  padding: 2rem 3rem 3rem 3rem;
+  /* border-radius: 20px; */
 }
 
 .StickmanLife-desc p {
-  z-index: 100;
-  margin: 1rem 0 0 0;
-  position: relative;
-  float: left;
+  text-align: center;
+  /* z-index: 100; */
+  margin: 0;
+  /* margin: 1rem 0 0 0; */
+  /* position: relative;
+  float: left; */
 }
 
-.StickmanLife-desc img {
+/* .StickmanLife-desc img {
   max-width: 70vw;
   position: absolute;
   left: -2.6rem;
   top: -3rem;
   z-index: 0;
-}
+} */
 
 .StickmanLife-button {
   color: white;
