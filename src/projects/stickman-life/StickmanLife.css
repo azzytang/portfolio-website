@@ -3,10 +3,6 @@
   flex-direction: column;
   align-items: center;
 }
-.StickmanLife iframe {
-  border: none;
-  margin: 0 0 3rem 0;
-}
 
 .StickmanLife h1 {
   font-size: 80px;
@@ -66,4 +62,59 @@
   border-color: var(--color-pink);
   color: var(--color-pink);
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.StickmanLife iframe {
+  border: none;
+  margin: 0 0 3rem 0;
+  width: 890px;
+  height: 500px;
+}
+
+@media screen and (max-width: 1000px) {
+  .StickmanLife-desc {
+    font-size: 30px;
+
+    padding: 1rem 2rem 2rem 2rem;
+  }
+
+  .StickmanLife iframe {
+    width: 550px;
+    height: 300px;
+  }
+  .StickmanLife h1 {
+    font-size: 60px;
+  }
+  .StickmanLife h2 {
+    font-size: 35px;
+  }
+  .StickmanLife h3 {
+    font-size: 35px;
+  }
+  .StickmanLife-button {
+    border-width: 3px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .StickmanLife iframe {
+    width: 400px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .StickmanLife iframe {
+    width: 350px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .StickmanLife-desc {
+    font-size: 20px;
+  }
+  .StickmanLife iframe {
+    width: 270px;
+    height: 150px;
+  }
 }

@@ -128,7 +128,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <h1>& this website ofc!</h1>
+      <h2 className="Projects-end">& this website ofc!</h2>
     </div>
   );
 };

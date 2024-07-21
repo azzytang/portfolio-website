@@ -46,10 +46,6 @@
 .Contact-email:hover .email-highlight {
   display: block;
 }
-.Contact-info img:hover {
-  /* background-color: rgb(247, 215, 215, 0.7);
-  border-radius: 30px; */
-}
 
 .Contact-social {
   display: flex;
@@ -67,5 +63,27 @@
   }
   .Contact p {
     font-size: 35px;
+  }
+  .email-highlight {
+    width: 6.5rem;
+  }
+  .email-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1.5rem 0.5rem 0 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Contact p {
+    font-size: 28px;
+  }
+  .Contact-info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .Contact-info p {
+    margin: 0 0 0 0;
   }
 }

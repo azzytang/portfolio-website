@@ -5,7 +5,8 @@
   margin: 0 5rem 0 5rem;
 }
 
-.Projects h1 {
+.Projects h1,
+.Projects h2 {
   font-size: 80px;
 }
 
@@ -159,7 +160,8 @@
     margin: 1rem;
   }
 
-  .Projects h1 {
+  .Projects h1,
+  .Projects h2 {
     font-size: 60px;
   }
 
@@ -170,5 +172,42 @@
 
   .imageBox .hoverImg div p {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Projects-stickman-life {
+    width: 16rem;
+    height: 12.3692rem;
+  }
+
+  .Projects-robotics {
+    width: 16rem;
+    height: 10.3052rem;
+  }
+
+  .Projects-smart-scan {
+    width: 16rem;
+    height: 12.1376rem;
+  }
+
+  .Projects-massage {
+    width: 16rem;
+    height: 10.0696rem;
+  }
+  .Projects-plan-pro {
+    width: 16rem;
+    height: 15.716rem;
+  }
+  .imageBox .hoverImg div h2 {
+    font-size: 50px;
+    margin: 3rem 0 0 0;
+  }
+
+  .imageBox .hoverImg div p {
+    font-size: 30px;
+  }
+  .Projects h2 {
+    font-size: 29px;
   }
 }

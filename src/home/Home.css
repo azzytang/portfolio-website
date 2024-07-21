@@ -51,3 +51,29 @@
     font-size: 40px;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .Home h1 {
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+  .Home h2 {
+    font-size: 35px;
+    margin: 0 0 3rem 0;
+  }
+  .Home h3 {
+    font-size: 35px;
+    margin-top: 1rem;
+  }
+  .Home p {
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: solid;
+    border-width: 3px;
+    font-size: 30px;
+    margin: 1.3rem 0 0 0;
+    padding: 0 22px 18px 22px;
+  }
+}

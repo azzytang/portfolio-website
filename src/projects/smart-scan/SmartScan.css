@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  margin: 0 3rem 0 3rem;
 }
 
 .SmartScan h1 {
@@ -22,7 +24,7 @@
   border: solid;
   border-width: 3px;
   font-size: 40px;
-  margin: 1.3rem 0 0 0;
+  margin: 1.3rem 0 2rem 0;
   padding: 0 22px 18px 22px;
 }
 
@@ -53,4 +55,49 @@
 .SmartScan-desc p {
   text-align: center;
   margin: 0;
+}
+
+@media screen and (max-width: 1250px) {
+  .SmartScan-imgs img {
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .SmartScan-desc {
+    font-size: 30px;
+    padding: 1rem 2rem 2rem 2rem;
+  }
+  .SmartScan-imgs img {
+    margin: 2rem 0 2rem 0;
+  }
+
+  .SmartScan h1 {
+    font-size: 60px;
+  }
+
+  .SmartScan h3 {
+    font-size: 35px;
+  }
+  .SmartScan-button {
+    border-width: 3px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .SmartScan-imgs img {
+    margin: 1rem 0 1rem 0;
+  }
+  .SmartScan h3 {
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .SmartScan-imgs img {
+    margin: 0 0 1rem 0;
+  }
+  .SmartScan-desc {
+    font-size: 20px;
+  }
 }
