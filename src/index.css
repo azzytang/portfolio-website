@@ -16,10 +16,8 @@
 }
 @font-face {
   font-family: "BrownBagLunch";
-  src: url("/Users/azzytang/portfolio-website/public/BrownBagLunch.woff2")
-      format("woff2"),
-    url("/Users/azzytang/portfolio-website/public/BrownBagLunch.woff")
-      format("woff");
+  src: url("./BrownBagLunch.woff2") format("woff2"),
+    url("./BrownBagLunch.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
