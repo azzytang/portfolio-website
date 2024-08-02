@@ -7,13 +7,13 @@ const PlanPro = () => {
     <div className="PlanPro">
       <h1>PlanPro</h1>
       <h3>Status: prob wont finish</h3>
-      <Link
-        to="https://github.com/azzytang/PlanPro"
+      <a
+        href="https://github.com/azzytang/PlanPro"
         target="_blank"
         rel="noreferrer"
       >
         <p className="PlanPro-button">github repo</p>
-      </Link>
+      </a>
       <h2>Video Demo:</h2>
       <iframe
         width="600px"

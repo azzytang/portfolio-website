@@ -7,13 +7,13 @@ const SmartScan = () => {
     <div className="SmartScan">
       <h1>SmartScan Attendance</h1>
       <h3>Status: Finished? (a lot of improvements can be made)</h3>
-      <Link
-        to="https://github.com/azzytang/smart-scan-attendance"
+      <a
+        href="https://github.com/azzytang/smart-scan-attendance"
         target="_blank"
         rel="noreferrer"
       >
         <p className="SmartScan-button">github repo</p>
-      </Link>
+      </a>
       <div className="SmartScan-imgs">
         <img src="/smart_scan3.png" alt="slide1"></img>
         <img src="/smart_scan2.png" alt="slide2"></img>

@@ -31,8 +31,8 @@ const Projects = () => {
         </div>
 
         <div className="imageBox">
-          <Link
-            to="https://www.undefinedrobotics.org/"
+          <a
+            href="https://www.undefinedrobotics.org/"
             target="_blank"
             rel="noreferrer"
           >
@@ -54,7 +54,7 @@ const Projects = () => {
                 <p>click to visit</p>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
 
         <div className="imageBox">
@@ -81,8 +81,8 @@ const Projects = () => {
         </div>
 
         <div className="imageBox">
-          <Link
-            to="https://shirleymassagetherapy.com/"
+          <a
+            href="https://shirleymassagetherapy.com/"
             target="_blank"
             rel="noreferrer"
           >
@@ -104,7 +104,7 @@ const Projects = () => {
                 <p>click to visit</p>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
 
         {/* <h2>Community Volleyball Court Reserver</h2> */}

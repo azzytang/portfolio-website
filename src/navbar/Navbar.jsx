@@ -45,15 +45,15 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Link
-          to="https://www.instagram.com/azzytang?igsh=MThnbHNrczBsY2F3&utm_source=qr"
+        <a
+          href="https://www.instagram.com/azzytang?igsh=MThnbHNrczBsY2F3&utm_source=qr"
           target="_blank"
           rel="noreferrer"
         >
           <img src="instagram_icon.png" alt="ig"></img>
-        </Link>
-        <Link
-          to="https://www.linkedin.com/in/azalea-tang-7474a7298"
+        </a>
+        <a
+          href="https://www.linkedin.com/in/azalea-tang-7474a7298"
           target="_blank"
           rel="noreferrer"
         >
@@ -62,10 +62,10 @@ const Navbar = () => {
             src="linkedin_icon.png"
             alt="linkedin"
           ></img>
-        </Link>
-        <Link to="https://github.com/azzytang" target="_blank" rel="noreferrer">
+        </a>
+        <a href="https://github.com/azzytang" target="_blank" rel="noreferrer">
           <img src="github_logo.png" alt="github"></img>
-        </Link>
+        </a>
       </div>
       <div className="Navbar-menu">
         {toggleMenu ? (

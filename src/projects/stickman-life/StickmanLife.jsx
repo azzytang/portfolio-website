@@ -7,13 +7,13 @@ const StickmanLife = () => {
     <div className="StickmanLife">
       <h1>Stickman Life</h1>
       <h3>Status: In Progress</h3>
-      <Link
-        to="https://github.com/azzytang/stickman-life"
+      <a
+        href="https://github.com/azzytang/stickman-life"
         target="_blank"
         rel="noreferrer"
       >
         <p className="StickmanLife-button">github repo</p>
-      </Link>
+      </a>
       <h2>Video Demo:</h2>
       <iframe
         src="https://www.youtube.com/embed/OVCrju9oqzk?si=l40CJHxGDiQL34i8"
