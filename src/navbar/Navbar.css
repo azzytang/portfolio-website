@@ -110,24 +110,26 @@ a {
   right: 0;
   top: 5rem;
   width: 20rem;
-  padding: 2rem 0 2rem 0;
+  padding: 3rem 0 3rem 0;
 }
-.Navbar-menu_container hr {
+/* .Navbar-menu_container hr {
   color: white;
   width: 15rem;
+  height: 0.1px;
   border-color: white;
   border: solid;
   border-radius: 20px;
-}
+} */
 .Navbar-menu_link {
   color: white;
-  margin: 0;
   cursor: pointer;
   text-decoration: none;
+  margin: 0;
 }
+
 .Navbar-menu_container p {
   margin: 0 0 1rem 3rem;
-  line-height: 50px;
+  line-height: 15px;
 }
 
 .Navbar-logo p,

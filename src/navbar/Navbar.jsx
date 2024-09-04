@@ -72,6 +72,7 @@ const Navbar = () => {
           <RiArrowUpWideFill
             className="Navbar-menu_icon"
             color="white"
+            backgroundColor="rgb(160, 193, 235)"
             size={27}
             onClick={() => setToggleMenu(false)}
           />
@@ -91,7 +92,7 @@ const Navbar = () => {
                 to="/about"
                 onClick={handleLinkClick}
               >
-                About
+                about
               </Link>
             </p>
             <hr></hr>
@@ -101,7 +102,7 @@ const Navbar = () => {
                 to="/contact"
                 onClick={handleLinkClick}
               >
-                Contact
+                contact
               </Link>
             </p>
             <hr></hr>
@@ -111,7 +112,7 @@ const Navbar = () => {
                 to="/projects"
                 onClick={handleLinkClick}
               >
-                Projects
+                projects
               </Link>
             </p>
           </div>

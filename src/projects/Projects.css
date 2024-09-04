@@ -67,45 +67,6 @@
   color: white;
 }
 
-.imageBox .hoverImg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: none;
-}
-
-.imageBox:hover .hoverImg {
-  display: block;
-}
-
-.imageBox:hover .hoverImg {
-  display: block;
-}
-
-.imageBox .hoverImg div {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  flex-direction: column;
-  left: 0;
-
-  top: 0;
-  margin: 0 0 0 0;
-  background-color: rgba(0, 0, 0, 0.335);
-
-  border-radius: 20px;
-}
-
-.imageBox .hoverImg div h2 {
-  font-size: 70px;
-  margin: 5rem 0 0 0;
-}
-
-.imageBox .hoverImg div p {
-  font-size: 50px;
-  margin: 0 0 0 0;
-}
-
 .Projects-stickman-life {
   width: 40rem;
   height: 30.923rem;
@@ -176,6 +137,25 @@
 }
 
 @media screen and (max-width: 500px) {
+  .imageBox .hoverImg {
+    display: none;
+  }
+
+  .imageBox:hover .hoverImg {
+    display: none;
+  }
+
+  .imageBox .hoverImg div {
+    display: none;
+  }
+
+  .imageBox .hoverImg div h2 {
+    display: none;
+  }
+
+  .imageBox .hoverImg div p {
+    display: none;
+  }
   .Projects-stickman-life {
     width: 16rem;
     height: 12.3692rem;
@@ -199,14 +179,17 @@
     width: 16rem;
     height: 15.716rem;
   }
-  .imageBox .hoverImg div h2 {
+  .Projects-end {
+    font-size: 100px;
+  }
+  /* .imageBox .hoverImg div h2 {
     font-size: 50px;
     margin: 3rem 0 0 0;
   }
 
   .imageBox .hoverImg div p {
     font-size: 30px;
-  }
+  } */
   .Projects h2 {
     font-size: 29px;
   }
