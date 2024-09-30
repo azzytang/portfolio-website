@@ -12,10 +12,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --font-family: "BrownBagLunch";
+  --font-family2: "Fredoka";
   --color-pink: rgb(247, 215, 215);
 }
 @font-face {
+  font-family: "Fredoka";
+  src: url("/Fredoka-VariableFont_wdth,wght.ttf") format("woff");
+
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "BrownBagLunch";
+
   src: url("/BrownBagLunch.woff2") format("woff2"),
     url("/BrownBagLunch.woff") format("woff");
   font-weight: 500;
