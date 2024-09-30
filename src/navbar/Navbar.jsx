@@ -45,13 +45,13 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <a
+        {/* <a
           href="https://www.instagram.com/azzytang?igsh=MThnbHNrczBsY2F3&utm_source=qr"
           target="_blank"
           rel="noreferrer"
         >
           <img src="instagram_icon.png" alt="ig"></img>
-        </a>
+        </a> */}
         <a
           href="https://www.linkedin.com/in/azalea-tang-7474a7298"
           target="_blank"
