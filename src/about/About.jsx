@@ -15,8 +15,8 @@ const About = () => {
         </div>
         <div className="About-desc">
           <p>
-            Hi, I am a junior in highschool attending the Texas Academy of Math
-            and Science (TAMS) on the Computer Science track.
+            Hi, I am currently studying Computer Science at the University of
+            North Texas.
           </p>
           <p>
             I have been coding for 3 years and enjoy participating in coding
