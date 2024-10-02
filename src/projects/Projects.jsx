@@ -30,7 +30,7 @@ const Projects = () => {
           </Link>
         </div>
 
-        <div className="imageBox">
+        {/* <div className="imageBox">
           <a
             href="https://www.undefinedrobotics.org/"
             target="_blank"
@@ -55,7 +55,7 @@ const Projects = () => {
               </div>
             </div>
           </a>
-        </div>
+        </div> */}
 
         <div className="imageBox">
           <Link to="/projects/smart-scan-attendance">
