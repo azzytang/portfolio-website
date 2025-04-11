@@ -9,6 +9,7 @@ import Projects from "./projects/Projects";
 import StickmanLife from "./projects/stickman-life/StickmanLife";
 import SmartScan from "./projects/smart-scan/SmartScan";
 import PlanPro from "./projects/plan-pro/PlanPro";
+import DeepScan from "./projects/deepscan/DeepScan";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -52,6 +53,7 @@ function App() {
                 element={<SmartScan />}
               />
               <Route path="/projects/plan-pro" element={<PlanPro />} />
+              <Route path="/projects/deepscan" element={<DeepScan />} />
             </Routes>
             <Footer />
           </div>

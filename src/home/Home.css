@@ -32,12 +32,6 @@
   padding: 0 22px 18px 22px;
 }
 
-.Home p:hover {
-  border-color: var(--color-pink);
-  color: var(--color-pink);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 @media screen and (max-width: 1000px) {
   .Home h1 {
     font-size: 80px;

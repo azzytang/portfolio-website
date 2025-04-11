@@ -8,6 +8,23 @@ const Projects = () => {
       <h1>Projects</h1>
       <div className="Projects-container">
         <div className="imageBox">
+          <Link to="/projects/deepscan">
+            <div className="imageInn">
+              <img
+                className="Projects-deepscan"
+                src="deepscan.png"
+                alt="deepscan1"
+              ></img>
+            </div>
+            <div className="hoverImg">
+              <div className="Projects-deepscan">
+                <h2>DeepScan Intelligence</h2>
+                <p>click to learn more</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="imageBox">
           <Link to="/projects/stickman-life">
             <div className="imageInn">
               <img

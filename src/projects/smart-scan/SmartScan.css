@@ -20,11 +20,15 @@
 .SmartScan-button {
   color: white;
   cursor: pointer;
-  background: none;
+  position: relative;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
   border: solid;
   border-width: 3px;
+  background: none;
   font-size: 40px;
-  margin: 1.3rem 0 2rem 0;
+  margin: 1.3rem 0 0 0;
   padding: 0 22px 18px 22px;
 }
 
@@ -32,6 +36,7 @@
   border-color: var(--color-pink);
   color: var(--color-pink);
   background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .SmartScan-imgs {

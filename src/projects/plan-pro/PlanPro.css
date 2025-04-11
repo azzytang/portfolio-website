@@ -20,22 +20,6 @@
   font-size: 50px;
   margin-bottom: 0;
 }
-.PlanPro-button {
-  color: white;
-  cursor: pointer;
-  background: none;
-  border: solid;
-  border-width: 3px;
-  font-size: 40px;
-  margin: 1.3rem 0 0 0;
-  padding: 0 22px 18px 22px;
-}
-
-.PlanPro-button:hover {
-  border-color: var(--color-pink);
-  color: var(--color-pink);
-  background-color: rgba(255, 255, 255, 0.1);
-}
 
 .PlanPro-desc {
   font-size: 40px;
@@ -100,4 +84,26 @@
     width: 270px;
     height: 150px;
   }
+}
+
+.PlanPro-button {
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border: solid;
+  border-width: 3px;
+  background: none;
+  font-size: 40px;
+  margin: 1.3rem 0 0 0;
+  padding: 0 22px 18px 22px;
+}
+
+.PlanPro-button:hover {
+  border-color: var(--color-pink);
+  color: var(--color-pink);
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }

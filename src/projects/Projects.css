@@ -91,6 +91,10 @@
   width: 30rem;
   height: 29.468rem;
 }
+.Projects-deepscan {
+  width: 52rem;
+  height: 30.344rem;
+}
 
 @media screen and (max-width: 1000px) {
   .Projects-stickman-life {
