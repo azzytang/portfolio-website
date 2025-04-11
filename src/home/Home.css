@@ -8,7 +8,7 @@
 }
 
 .Home h1 {
-  margin: 5rem 0 0 0;
+  margin: 1rem 0 0 0;
 
   font-size: 100px;
 }
@@ -102,4 +102,31 @@
 .loaded {
   opacity: 1;
   transition: opacity 0.3s ease-in;
+}
+
+.project-button {
+  position: relative;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border: solid;
+  border-width: 3px;
+}
+
+.project-button:hover {
+  border-color: var(--color-pink);
+  color: var(--color-pink);
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.azzy-home {
+  margin-top: 5rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid;
+  border-width: 5px;
+  border-color: var(--color-pink);
 }

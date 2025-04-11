@@ -49,18 +49,18 @@ a {
   position: absolute;
   left: -1.6rem;
   top: 0.1rem;
-  display: none;
-
-  /* left: 0;
-  top: 0; */
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
+
 .Navbar-link p {
   z-index: 100;
   position: relative;
   float: right;
 }
+
 .Navbar-link:hover img {
-  display: block;
+  opacity: 1;
 }
 
 .Navbar-links {

@@ -11,13 +11,14 @@ const Home = () => {
 
   return (
     <div className={`Home slide-in ${isLoading ? "loading" : "loaded"}`}>
+      <img src={"azalea_home.png"} alt="azzy" className="azzy-home" />
       <h1>Azalea Tang</h1>
       <h3>(azzy)</h3>
       <h2>
         Developer and Student at the Texas Academy of Mathematics and Science
       </h2>
       <Link to="/projects">
-        <p>see my projects</p>
+        <p className="project-button">see my projects</p>
       </Link>
     </div>
   );

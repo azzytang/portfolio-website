@@ -1,23 +1,42 @@
 .App-container {
   min-height: 100vh;
   width: 100%;
+  position: relative;
+  overflow: visible;
 }
 
-.App-loading {
-  min-height: 100vh;
-  width: 100%;
-  background-image: url("/clouds_background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.moving-background {
+  position: absolute;
+  top: 0;
+  left: -250px;
+  right: -250px;
+  bottom: 0;
+  background-image: url("../public/clouds_bg_extended.png");
+  background-size: 200%;
+  background-position: top left;
+  background-repeat: repeat-x;
+  z-index: -1;
+  animation: moveBackground 140s linear infinite;
+  height: 100%;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0% top;
+  }
+  100% {
+    background-position: 200% top;
+  }
 }
 
 .App {
-  background-image: url("/clouds_background.jpg");
+  position: relative;
+  z-index: 1;
+  background: transparent;
   font-family: var(--font-family);
   opacity: 0;
   animation: fadeIn 0.3s ease-in forwards;
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
 }
 

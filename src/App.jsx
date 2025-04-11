@@ -30,11 +30,12 @@ function App() {
   }, []);
 
   return (
-    <div className="App-container">
-      {!isLoaded ? (
-        <div className="App-loading" />
-      ) : (
-        <Router>
+    <Router>
+      <div className="App-container">
+        <div className="moving-background" />
+        {!isLoaded ? (
+          <div className="App-loading" />
+        ) : (
           <div className="App">
             <Navbar />
             <Routes>
@@ -54,9 +55,9 @@ function App() {
             </Routes>
             <Footer />
           </div>
-        </Router>
-      )}
-    </div>
+        )}
+      </div>
+    </Router>
   );
 }
 
