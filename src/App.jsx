@@ -1,4 +1,5 @@
 "use client";
+import React, { useState, useEffect } from "react";
 import Navbar from "./navbar/Navbar";
 import About from "./about/About";
 import Contact from "./contact/Contact";
@@ -12,25 +13,50 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    window.onload = () => {
+      setIsLoaded(true);
+    };
+
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 100);
+
+    return () => {
+      window.onload = null;
+    };
+  }, []);
+
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/stickman-life" element={<StickmanLife />} />
-          <Route
-            path="/projects/smart-scan-attendance"
-            element={<SmartScan />}
-          />
-          <Route path="/projects/plan-pro" element={<PlanPro />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <div className="App-container">
+      {!isLoaded ? (
+        <div className="App-loading" />
+      ) : (
+        <Router>
+          <div className="App">
+            <Navbar />
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route
+                path="/projects/stickman-life"
+                element={<StickmanLife />}
+              />
+              <Route
+                path="/projects/smart-scan-attendance"
+                element={<SmartScan />}
+              />
+              <Route path="/projects/plan-pro" element={<PlanPro />} />
+            </Routes>
+            <Footer />
+          </div>
+        </Router>
+      )}
+    </div>
   );
 }
 

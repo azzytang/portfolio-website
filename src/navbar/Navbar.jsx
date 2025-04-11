@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -6,13 +6,18 @@ import { RiArrowUpWideFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleLinkClick = () => {
     setToggleMenu(false);
   };
 
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
   return (
-    <div className="Navbar">
+    <div className={`Navbar slide-in ${isLoading ? "loading" : "loaded"}`}>
       <div className="Navbar-links">
         <Link to="/">
           <div className="Navbar-logo">

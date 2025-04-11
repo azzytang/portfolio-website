@@ -1,4 +1,31 @@
+.App-container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.App-loading {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/clouds_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .App {
   background-image: url("/clouds_background.jpg");
   font-family: var(--font-family);
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in forwards;
+  min-height: 100vh;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
