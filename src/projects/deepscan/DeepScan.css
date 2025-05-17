@@ -5,35 +5,32 @@
 }
 
 .DeepScan h1 {
-  font-size: 80px;
+  font-size: 50px;
   line-height: 3rem;
   margin-bottom: 0;
 }
 
 .DeepScan h3 {
-  font-size: 40px;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .DeepScan h2 {
-  font-size: 50px;
-  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 550;
+  margin-bottom: 1rem;
 }
 
 .DeepScan-button {
   color: white;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease;
-  border: solid;
-  border-width: 3px;
   background: none;
-  font-size: 40px;
-  margin: 1.3rem 0 0 0;
-  padding: 0 22px 18px 22px;
+  border: solid;
+  border-width: 2px;
+  font-size: 17px;
+  padding: 0.8rem 1rem;
 }
 
 .DeepScan-button:hover {
@@ -44,11 +41,11 @@
 }
 
 .DeepScan-desc {
-  font-size: 40px;
+  font-size: 20px;
   max-width: 60vw;
 
   background-color: rgb(160, 193, 235);
-  padding: 2rem 3rem 3rem 3rem;
+  padding: 1.5rem;
 }
 
 .DeepScan-desc p {

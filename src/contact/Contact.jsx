@@ -6,7 +6,7 @@ import { IoMailOutline } from "react-icons/io5";
 const Contact = () => {
   return (
     <div className="Contact">
-      <h1>Contact</h1>
+      <h1>contact</h1>
       <div className="Contact-info">
         <a href="mailto:azzytang@gmail.com">
           <div className="Contact-email">

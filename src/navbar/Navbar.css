@@ -7,7 +7,8 @@ a {
   align-items: center;
 
   padding: 1.5% 4.5%;
-  font-size: 45px;
+  /* font-size: 45px; */
+  font-size: 1.1em;
   min-height: 10vh;
   /* outline text
   -webkit-text-stroke: 1.2px black; 
@@ -42,18 +43,20 @@ a {
 .Navbar-link {
   position: relative;
   float: left;
+  margin-right: 0.5rem;
 }
 
 .Navbar-link img {
   z-index: 0;
   position: absolute;
-  left: -1.6rem;
-  top: 0.1rem;
+  left: -2.2rem;
+  top: -1.4rem;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 
 .Navbar-link p {
+  font-weight: 500;
   z-index: 100;
   position: relative;
   float: right;
@@ -64,6 +67,8 @@ a {
 }
 
 .Navbar-links {
+  font-weight: 600;
+  font-size: 1.5rem;
   flex: 1;
   display: flex;
   justify-content: flex-start;

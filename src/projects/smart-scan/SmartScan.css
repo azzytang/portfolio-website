@@ -7,29 +7,24 @@
 }
 
 .SmartScan h1 {
-  font-size: 80px;
+  font-size: 50px;
   line-height: 3rem;
   margin-bottom: 0;
 }
 .SmartScan h3 {
-  font-size: 40px;
+  font-size: 20px;
   line-height: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .SmartScan-button {
   color: white;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease;
-  border: solid;
-  border-width: 3px;
   background: none;
-  font-size: 40px;
-  margin: 1.3rem 0 0 0;
-  padding: 0 22px 18px 22px;
+  border: solid;
+  border-width: 2px;
+  font-size: 17px;
+  padding: 0.8rem 1rem;
 }
 
 .SmartScan-button:hover {
@@ -59,6 +54,7 @@
 
 .SmartScan-desc p {
   text-align: center;
+  font-size: 20px;
   margin: 0;
 }
 

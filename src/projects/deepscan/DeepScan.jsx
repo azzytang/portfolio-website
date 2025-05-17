@@ -12,7 +12,7 @@ const DeepScan = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <p className="PlanPro-button">github repo</p>
+        <p className="DeepScan-button">github repo</p>
       </a>
       <h2>Video Demo:</h2>
       <iframe
@@ -24,7 +24,7 @@ const DeepScan = () => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
-      <div className="PlanPro-desc">
+      <div className="DeepScan-desc">
         <p>In progress</p>
       </div>
     </div>

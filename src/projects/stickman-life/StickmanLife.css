@@ -5,28 +5,30 @@
 }
 
 .StickmanLife h1 {
-  font-size: 80px;
+  font-size: 50px;
   line-height: 3rem;
   margin-bottom: 0;
 }
 .StickmanLife h3 {
-  font-size: 40px;
+  font-size: 20px;
   line-height: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .StickmanLife h2 {
-  font-size: 50px;
-  margin-bottom: 0;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  font-weight: 550;
 }
 
 .StickmanLife-desc {
-  font-size: 40px;
+  font-size: 20px;
   max-width: 60vw;
   /* position: relative;
   float: left; */
   background-color: rgb(160, 193, 235);
-  padding: 2rem 3rem 3rem 3rem;
+  padding: 1.5rem;
   /* border-radius: 20px; */
 }
 
@@ -49,16 +51,11 @@
 .StickmanLife-button {
   color: white;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease;
-  border: solid;
-  border-width: 3px;
   background: none;
-  font-size: 40px;
-  margin: 1.3rem 0 0 0;
-  padding: 0 22px 18px 22px;
+  border: solid;
+  border-width: 2px;
+  font-size: 17px;
+  padding: 0.8rem 1rem;
 }
 
 .StickmanLife-button:hover {

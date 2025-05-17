@@ -10,6 +10,7 @@ import StickmanLife from "./projects/stickman-life/StickmanLife";
 import SmartScan from "./projects/smart-scan/SmartScan";
 import PlanPro from "./projects/plan-pro/PlanPro";
 import DeepScan from "./projects/deepscan/DeepScan";
+import ScrollToTop from "./ScrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="App-container">
         <div className="moving-background" />
         {!isLoaded ? (

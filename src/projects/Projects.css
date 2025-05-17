@@ -7,7 +7,7 @@
 
 .Projects h1,
 .Projects h2 {
-  font-size: 80px;
+  font-size: 50px;
 }
 
 .Projects-container {
@@ -55,14 +55,14 @@
 }
 
 .imageBox .hoverImg div h2 {
-  font-size: 70px;
+  font-size: 40px;
   margin: 5rem 0 0 0;
   line-height: normal;
   color: white;
 }
 
 .imageBox .hoverImg div p {
-  font-size: 50px;
+  font-size: 20px;
   margin: 0 0 0 0;
   color: white;
 }

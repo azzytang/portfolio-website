@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <div className="Projects">
-      <h1>Projects</h1>
+      <h1>projects</h1>
       <div className="Projects-container">
         <div className="imageBox">
           <Link to="/projects/deepscan">

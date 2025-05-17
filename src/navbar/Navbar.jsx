@@ -34,19 +34,19 @@ const Navbar = () => {
         <Link to="/about">
           <div className="Navbar-link">
             <p>about</p>
-            <img src="navbar_highlight.png" style={{ width: "8rem" }}></img>
+            <img src="navbar_highlight.png" style={{ width: "7rem" }}></img>
           </div>
         </Link>
         <Link to="/contact">
           <div className="Navbar-link">
             <p>contact</p>
-            <img src="navbar_highlight2.png" style={{ width: "10rem" }}></img>
+            <img src="navbar_highlight2.png" style={{ width: "9rem" }}></img>
           </div>
         </Link>
         <Link to="/projects">
           <div className="Navbar-link">
             <p>projects</p>
-            <img src="navbar_highlight3.png" style={{ width: "10rem" }}></img>
+            <img src="navbar_highlight3.png" style={{ width: "9rem" }}></img>
           </div>
         </Link>
 

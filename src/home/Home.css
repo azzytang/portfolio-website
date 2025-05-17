@@ -8,28 +8,35 @@
 }
 
 .Home h1 {
+  font-weight: 600;
   margin: 1rem 0 0 0;
-
-  font-size: 100px;
+  margin-top: 3rem;
+  font-size: 50px;
 }
 
 .Home h2 {
-  margin: 0 0 5rem 0;
-  font-size: 50px;
+  font-weight: 400;
+  margin: 0 0 3rem 0;
+  margin-top: 1rem;
+  font-size: 20px;
 }
 .Home h3 {
-  margin: 0 0 3rem 0;
-  font-size: 50px;
+  font-weight: 350;
+  margin: 0 0 1rem 0;
+  font-size: 20px;
 }
 .Home p {
   color: white;
   cursor: pointer;
-  background: none;
+  position: relative;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
   border: solid;
-  border-width: 3px;
-  font-size: 40px;
-  margin: 1.3rem 0 0 0;
-  padding: 0 22px 18px 22px;
+  border-width: 2px;
+  background: none;
+  font-size: 17px;
+  padding: 0.8rem 1rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -49,6 +56,7 @@
 @media screen and (max-width: 430px) {
   .Home h1 {
     font-size: 55px;
+
     line-height: 60px;
   }
 
@@ -96,15 +104,6 @@
 .loaded {
   opacity: 1;
   transition: opacity 0.3s ease-in;
-}
-
-.project-button {
-  position: relative;
-  overflow: hidden;
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease;
-  border: solid;
-  border-width: 3px;
 }
 
 .project-button:hover {
