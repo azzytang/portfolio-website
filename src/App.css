@@ -11,7 +11,7 @@
   left: -250px;
   right: -250px;
   bottom: 0;
-  background-image: url("clouds_bg_extended.png");
+  background-image: var(--background-image);
   background-size: 200%;
   background-position: top left;
   background-repeat: repeat-x;

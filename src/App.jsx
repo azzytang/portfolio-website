@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./navbar/Navbar";
 import About from "./about/About";
 import Contact from "./contact/Contact";
@@ -18,6 +18,12 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    // Set the background image as a CSS variable
+    document.documentElement.style.setProperty(
+      "--background-image",
+      `url(${import.meta.env.BASE_URL}clouds_bg_extended.png)`
+    );
+
     window.onload = () => {
       setIsLoaded(true);
     };
