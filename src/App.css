@@ -21,6 +21,17 @@
   width: calc(100% + 500px);
 }
 
+.moving-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(25, 25, 112, 0.4);
+  pointer-events: none;
+}
+
 @keyframes moveBackground {
   0% {
     background-position: 0% top;

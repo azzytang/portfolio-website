@@ -1,4 +1,5 @@
 .PlanPro {
+  margin: 0.9rem 5rem 0 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +28,7 @@
   font-size: 20px;
   max-width: 60vw;
 
-  background-color: rgb(160, 193, 235);
+  background-color: var(--color-purple);
   padding: 1.5rem;
 }
 
@@ -40,51 +41,40 @@
   margin: 0 0 3rem 0;
 }
 
-@media screen and (max-width: 1000px) {
-  .PlanPro-desc {
-    font-size: 30px;
-
-    padding: 1rem 2rem 2rem 2rem;
-  }
-
-  .PlanPro iframe {
-    width: 550px;
-    height: 300px;
-  }
+@media screen and (max-width: 950px) {
   .PlanPro h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
   .PlanPro h2 {
-    font-size: 35px;
+    font-size: 20px;
   }
   .PlanPro h3 {
-    font-size: 35px;
+    font-size: 17px;
   }
-  .PlanPro-button {
-    border-width: 3px;
-    font-size: 30px;
+  .PlanPro-desc {
+    font-size: 17px;
+  }
+
+  .PlanPro iframe {
+    width: 70vw;
+    height: 43.75vw;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .PlanPro iframe {
-    width: 400px;
-    height: 250px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .PlanPro iframe {
-    width: 350px;
-    height: 200px;
-  }
-}
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 550px) {
   .PlanPro-desc {
-    font-size: 20px;
+    font-size: 12px;
+    padding: 1rem;
+    max-width: 65vw;
   }
-  .PlanPro iframe {
-    width: 270px;
-    height: 150px;
+  .PlanPro {
+    margin: 0 0 0 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .PlanPro-button {
+    font-size: 15px;
   }
 }
 

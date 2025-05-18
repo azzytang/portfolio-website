@@ -6,13 +6,14 @@
   font-weight: 400;
 
   color: rgba(255, 255, 255, 0.87);
-
+  background-color: var(--color-purple);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --font-family: "BrownBagLunch";
   --color-pink: rgb(247, 215, 215);
+  --color-purple: rgb(85, 104, 159);
 }
 .special-gothic-expanded-one-regular {
   font-family: "Special Gothic Expanded One", sans-serif;

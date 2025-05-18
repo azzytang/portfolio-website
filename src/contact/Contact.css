@@ -61,33 +61,24 @@
   width: 35px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
   .Contact h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
   .Contact p {
-    font-size: 35px;
+    font-size: 20px;
   }
   .email-highlight {
-    width: 6.5rem;
+    width: 7.5rem;
   }
   .email-icon {
     width: 2.5rem;
     height: 2.5rem;
-    margin: 1.5rem 0.5rem 0 0;
   }
 }
 
 @media screen and (max-width: 450px) {
   .Contact p {
-    font-size: 28px;
-  }
-  .Contact-info {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .Contact-info p {
-    margin: 0 0 0 0;
+    font-size: 17px;
   }
 }

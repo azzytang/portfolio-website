@@ -10,6 +10,8 @@ a {
   /* font-size: 45px; */
   font-size: 1.1em;
   min-height: 10vh;
+  position: relative;
+  z-index: 1000;
   /* outline text
   -webkit-text-stroke: 1.2px black; 
   or this support all browser
@@ -93,6 +95,7 @@ a {
 
   display: none;
   position: relative;
+  z-index: 1001;
 }
 
 .Navbar-menu {
@@ -107,34 +110,62 @@ a {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  z-index: 1000;
-
+  z-index: 1002;
   text-align: end;
-  background-color: rgb(160, 193, 235);
+  background-color: var(--color-purple);
+  backdrop-filter: blur(10px);
   position: absolute;
   right: 0;
   top: 5rem;
   width: 20rem;
-  padding: 3rem 0 3rem 0;
+  padding: 2rem 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease-out;
 }
-/* .Navbar-menu_container hr {
-  color: white;
-  width: 15rem;
-  height: 0.1px;
-  border-color: white;
-  border: solid;
-  border-radius: 20px;
-} */
+
+.Navbar-menu_container p {
+  margin: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.Navbar-menu_container p:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .Navbar-menu_link {
   color: white;
   cursor: pointer;
   text-decoration: none;
   margin: 0;
+  padding: 1rem 3rem;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-.Navbar-menu_container p {
-  margin: 0 0 1rem 3rem;
-  line-height: 15px;
+.Navbar-menu_link:hover {
+  color: var(--color-pink);
+  transform: translateX(-5px);
+}
+
+.Navbar-menu_container hr {
+  width: 80%;
+  margin: 0.5rem auto;
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Navbar-menu_icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.Navbar-menu_icon:hover {
+  transform: scale(1.1);
 }
 
 .Navbar-logo p,
@@ -180,13 +211,12 @@ a {
     right: 0;
     top: 5rem;
     width: 16rem;
+    padding: 1.5rem 0;
   }
-  .Navbar-menu_container hr {
-    color: white;
-    width: 13rem;
-    border-color: white;
-    border: solid;
-    border-radius: 20px;
+
+  .Navbar-menu_link {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -214,4 +244,15 @@ a {
 .loaded {
   opacity: 1;
   transition: opacity 0.3s ease-in;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

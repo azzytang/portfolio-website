@@ -12,7 +12,7 @@
 
 .Projects-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -96,10 +96,17 @@
   height: 30.344rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
+  .Projects h1 {
+    font-size: 40px;
+  }
+  .Projects-deepscan {
+    width: 70vw;
+    height: 40.8477vw;
+  }
   .Projects-stickman-life {
-    width: 25rem;
-    height: 19.327rem;
+    width: 60vw;
+    height: 43.2925vw;
   }
 
   .Projects-robotics {
@@ -108,93 +115,33 @@
   }
 
   .Projects-smart-scan {
-    width: 25rem;
-    height: 18.965rem;
+    width: 60vw;
+    height: 45.516vw;
   }
 
   .Projects-massage {
-    width: 25rem;
-    height: 15.734rem;
+    width: 70vw;
+    height: 44.0552vw;
   }
   .Projects-plan-pro {
-    width: 25rem;
-    height: 24.56rem;
+    width: 50vw;
+    height: 49.12vw;
   }
 
   .imageBox {
     margin: 1rem;
   }
 
-  .Projects h1,
-  .Projects h2 {
-    font-size: 60px;
-  }
-
   .imageBox .hoverImg div h2 {
-    font-size: 50px;
-    margin: 3rem 0 0 0;
+    max-width: 60vw;
+    margin-top: 8vw;
+    font-size: 4vw;
   }
 
   .imageBox .hoverImg div p {
-    font-size: 30px;
+    font-size: 2vw;
   }
-}
-
-@media screen and (max-width: 500px) {
-  .imageBox .hoverImg {
-    display: none;
-  }
-
-  .imageBox:hover .hoverImg {
-    display: none;
-  }
-
-  .imageBox .hoverImg div {
-    display: none;
-  }
-
-  .imageBox .hoverImg div h2 {
-    display: none;
-  }
-
-  .imageBox .hoverImg div p {
-    display: none;
-  }
-  .Projects-stickman-life {
-    width: 16rem;
-    height: 12.3692rem;
-  }
-
-  .Projects-robotics {
-    width: 16rem;
-    height: 10.3052rem;
-  }
-
-  .Projects-smart-scan {
-    width: 16rem;
-    height: 12.1376rem;
-  }
-
-  .Projects-massage {
-    width: 16rem;
-    height: 10.0696rem;
-  }
-  .Projects-plan-pro {
-    width: 16rem;
-    height: 15.716rem;
-  }
-  .Projects-end {
-    font-size: 100px;
-  }
-  /* .imageBox .hoverImg div h2 {
-    font-size: 50px;
-    margin: 3rem 0 0 0;
-  }
-
-  .imageBox .hoverImg div p {
-    font-size: 30px;
-  } */
   .Projects h2 {
-    font-size: 29px;
+    font-size: 4vw;
   }
 }

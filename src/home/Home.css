@@ -7,6 +7,16 @@
   margin: 0 3rem 0 3rem;
 }
 
+.azzy-home {
+  margin-top: 5rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid;
+  border-width: 5px;
+  border-color: var(--color-pink);
+}
 .Home h1 {
   font-weight: 600;
   margin: 1rem 0 0 0;
@@ -38,65 +48,6 @@
   font-size: 17px;
   padding: 0.8rem 1rem;
 }
-
-@media screen and (max-width: 1000px) {
-  .Home h1 {
-    font-size: 80px;
-  }
-
-  .Home h2 {
-    font-size: 40px;
-    margin: 0 0 3rem 0;
-  }
-  .Home h3 {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .Home h1 {
-    font-size: 55px;
-
-    line-height: 60px;
-  }
-
-  .Home h2 {
-    font-size: 35px;
-    margin: 0 0 3rem 0;
-  }
-  .Home h3 {
-    font-size: 35px;
-    margin-top: 1rem;
-  }
-  .Home p {
-    color: white;
-    cursor: pointer;
-    background: none;
-    border: solid;
-    border-width: 3px;
-    font-size: 30px;
-    margin: 1.3rem 0 0 0;
-    padding: 0 22px 18px 22px;
-  }
-}
-
-.slide-in {
-  animation: slideIn 1s ease-out;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .loading {
   opacity: 0;
 }
@@ -113,13 +64,73 @@
   transform: translateY(-2px);
 }
 
-.azzy-home {
-  margin-top: 5rem;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  object-fit: cover;
-  border: solid;
-  border-width: 5px;
-  border-color: var(--color-pink);
+@media screen and (max-width: 1000px) {
+  .Home h1 {
+    font-size: 50px;
+  }
+
+  .Home h2 {
+    font-size: 20px;
+    margin: 0 5rem 1rem 5rem;
+  }
+  .Home h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .azzy-home {
+    width: 17rem;
+    height: 17rem;
+    border-width: 4px;
+  }
+  .Home h1 {
+    font-size: 40px;
+  }
+
+  .Home h2 {
+    font-size: 20px;
+    margin: 0 2rem 2rem 2rem;
+  }
+  .Home h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .azzy-home {
+    width: 15rem;
+    height: 15rem;
+    border-width: 4px;
+  }
+  .Home h1 {
+    font-size: 35px;
+  }
+
+  .Home h2 {
+    font-size: 15px;
+    margin: 0 2rem 2rem 2rem;
+  }
+  .Home h3 {
+    font-size: 15px;
+  }
+  .Home p {
+    font-size: 15px;
+  }
+}
+.slide-in {
+  animation: slideIn 1s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
