@@ -10,6 +10,7 @@ import StickmanLife from "./projects/stickman-life/StickmanLife";
 import SmartScan from "./projects/smart-scan/SmartScan";
 import PlanPro from "./projects/plan-pro/PlanPro";
 import DeepScan from "./projects/deepscan/DeepScan";
+import RPE10 from "./projects/rpe10/RPE10";
 import ScrollToTop from "./ScrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -62,6 +63,7 @@ function App() {
               />
               <Route path="/projects/plan-pro" element={<PlanPro />} />
               <Route path="/projects/deepscan" element={<DeepScan />} />
+              <Route path="/projects/rpe10" element={<RPE10 />} />
             </Routes>
             <Footer />
           </div>
