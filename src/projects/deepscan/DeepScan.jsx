@@ -25,7 +25,11 @@ const DeepScan = () => {
         allowFullScreen
       ></iframe>
       <div className="DeepScan-desc">
-        <p>In progress</p>
+        <p>
+          Created for hackTAMS 2025 and got an honorable mention. A website that
+          allows users to upload images to detect if it is a deepfake. Made with
+          TensorFlow, React, Python, and Flask.
+        </p>
       </div>
     </div>
   );
