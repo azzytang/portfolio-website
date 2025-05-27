@@ -96,9 +96,18 @@
   height: 30.344rem;
 }
 
+.Projects-byte2bite {
+  width: 52rem;
+  height: 26.468rem;
+}
+
 @media screen and (max-width: 950px) {
   .Projects h1 {
     font-size: 40px;
+  }
+  .Projects-byte2bite {
+    width: 70vw;
+    height: 37.5vw;
   }
   .Projects-deepscan {
     width: 70vw;
