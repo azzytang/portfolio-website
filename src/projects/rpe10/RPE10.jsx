@@ -8,7 +8,7 @@ const RPE10 = () => {
       <h1>RPE10</h1>
       <h3>Status: In progress</h3>
       <a
-        href="https://github.com/azzytang/Max-AI"
+        href="https://github.com/azzytang/rpe10"
         target="_blank"
         rel="noreferrer"
       >
