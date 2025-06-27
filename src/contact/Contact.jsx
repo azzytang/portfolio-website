@@ -23,7 +23,7 @@ const Contact = () => {
         <p>azzytang@gmail.com</p>
       </div>
 
-      <p>follow me on social media!</p>
+      <p>Connect with me on social media!</p>
       <div className="Contact-social">
         {/* <a
           href="https://www.instagram.com/azzytang?igsh=MThnbHNrczBsY2F3&utm_source=qr"

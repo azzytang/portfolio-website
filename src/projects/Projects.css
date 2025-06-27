@@ -101,9 +101,18 @@
   height: 26.468rem;
 }
 
+.Projects-rpe10 {
+  width: 50rem;
+  height: 24rem;
+}
+
 @media screen and (max-width: 950px) {
   .Projects h1 {
     font-size: 40px;
+  }
+  .Projects-rpe10 {
+    width: 60vw;
+    height: 28.8vw;
   }
   .Projects-byte2bite {
     width: 70vw;

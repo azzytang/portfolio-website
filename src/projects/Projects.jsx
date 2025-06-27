@@ -8,6 +8,19 @@ const Projects = () => {
       <h1>projects</h1>
       <div className="Projects-container">
         <div className="imageBox">
+          <Link to="/projects/rpe10">
+            <div className="imageInn">
+              <img className="Projects-rpe10" src="rpe10.png" alt="rpe10"></img>
+            </div>
+            <div className="hoverImg">
+              <div className="Projects-rpe10">
+                <h2>RPE10</h2>
+                <p>click to learn more</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="imageBox">
           <Link to="/projects/byte2bite">
             <div className="imageInn">
               <img
@@ -19,23 +32,6 @@ const Projects = () => {
             <div className="hoverImg">
               <div className="Projects-byte2bite">
                 <h2>Byte2Bite</h2>
-                <p>click to learn more</p>
-              </div>
-            </div>
-          </Link>
-        </div>
-        <div className="imageBox">
-          <Link to="/projects/rpe10">
-            <div className="imageInn">
-              <img
-                className="Projects-deepscan"
-                src="rpe10.png"
-                alt="rpe10"
-              ></img>
-            </div>
-            <div className="hoverImg">
-              <div className="Projects-deepscan">
-                <h2>RPE10</h2>
                 <p>click to learn more</p>
               </div>
             </div>

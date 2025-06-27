@@ -49,6 +49,12 @@ const Navbar = () => {
             <img src="navbar_highlight3.png" style={{ width: "9rem" }}></img>
           </div>
         </Link>
+        <Link to="/research">
+          <div className="Navbar-link">
+            <p>research</p>
+            <img src="navbar_highlight2.png" style={{ width: "9rem" }}></img>
+          </div>
+        </Link>
 
         {/* <a
           href="https://www.instagram.com/azzytang?igsh=MThnbHNrczBsY2F3&utm_source=qr"
@@ -117,6 +123,15 @@ const Navbar = () => {
                 onClick={handleLinkClick}
               >
                 projects
+              </Link>
+            </p>
+            <p>
+              <Link
+                className="Navbar-menu_link"
+                to="/research"
+                onClick={handleLinkClick}
+              >
+                research
               </Link>
             </p>
           </div>
