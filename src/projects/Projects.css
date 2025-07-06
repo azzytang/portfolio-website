@@ -106,9 +106,18 @@
   height: 24rem;
 }
 
+.Projects-coding-agent {
+  width: 50rem;
+  height: 20rem;
+}
+
 @media screen and (max-width: 950px) {
   .Projects h1 {
     font-size: 40px;
+  }
+  .Projects-coding-agent {
+    width: 70vw;
+    height: 28.8vw;
   }
   .Projects-rpe10 {
     width: 60vw;

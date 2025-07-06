@@ -8,6 +8,23 @@ const Projects = () => {
       <h1>projects</h1>
       <div className="Projects-container">
         <div className="imageBox">
+          <Link to="/projects/coding-agent">
+            <div className="imageInn">
+              <img
+                className="Projects-coding-agent"
+                src="coding_agent1.jpg"
+                alt="coding-agent"
+              ></img>
+            </div>
+            <div className="hoverImg">
+              <div className="Projects-coding-agent">
+                <h2>Coding Agent</h2>
+                <p>click to learn more</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="imageBox">
           <Link to="/projects/rpe10">
             <div className="imageInn">
               <img className="Projects-rpe10" src="rpe10.png" alt="rpe10"></img>
