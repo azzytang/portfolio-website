@@ -96,11 +96,6 @@
   height: 30.344rem;
 }
 
-.Projects-byte2bite {
-  width: 52rem;
-  height: 26.468rem;
-}
-
 .Projects-rpe10 {
   width: 50rem;
   height: 24rem;
@@ -122,10 +117,6 @@
   .Projects-rpe10 {
     width: 60vw;
     height: 28.8vw;
-  }
-  .Projects-byte2bite {
-    width: 70vw;
-    height: 37.5vw;
   }
   .Projects-deepscan {
     width: 70vw;

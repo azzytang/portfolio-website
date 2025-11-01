@@ -1,6 +1,4 @@
-import React from "react";
 import "./RPE10.css";
-import { Link } from "react-router-dom";
 
 const RPE10 = () => {
   return (
@@ -23,16 +21,15 @@ const RPE10 = () => {
         <p>
           RPE10 is the verified digital identity for competitive powerlifters.
           Track your PRs, build shareable meet recaps, and earn recognition that
-          actually means something. Whether you're repping your local gym or
+          actually means something. Whether you are repping your local gym or
           chasing national records, RPE10 keeps track of your meet history,
           complete with badges, totals, and federation-verified stats. Built for
           powerlifters. Backed by data. Powered by community.
         </p>
         <p>
-          I am currently working on the MVP and will start testing with a group
-          of around 10 beta testers starting in July 2025.
+          Currently in beta testing with around 20 users. Expecting to launch in
+          December 2025.
         </p>
-        <p>Expecting to launch in August 2025.</p>
       </div>
     </div>
   );

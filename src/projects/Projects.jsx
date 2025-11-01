@@ -1,4 +1,3 @@
-import React from "react";
 import "./Projects.css";
 import { Link } from "react-router-dom";
 
@@ -37,23 +36,7 @@ const Projects = () => {
             </div>
           </Link>
         </div>
-        <div className="imageBox">
-          <Link to="/projects/byte2bite">
-            <div className="imageInn">
-              <img
-                className="Projects-byte2bite"
-                src="byte2bite.png"
-                alt="byte2bite"
-              ></img>
-            </div>
-            <div className="hoverImg">
-              <div className="Projects-byte2bite">
-                <h2>Byte2Bite</h2>
-                <p>click to learn more</p>
-              </div>
-            </div>
-          </Link>
-        </div>
+
         <div className="imageBox">
           <Link to="/projects/deepscan">
             <div className="imageInn">
