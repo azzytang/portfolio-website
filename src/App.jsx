@@ -11,7 +11,6 @@ import SmartScan from "./projects/smart-scan/SmartScan";
 import PlanPro from "./projects/plan-pro/PlanPro";
 import DeepScan from "./projects/deepscan/DeepScan";
 import RPE10 from "./projects/rpe10/RPE10";
-import Byte2Bite from "./projects/byte2bite/Byte2Bite";
 import CodingAgent from "./projects/coding-agent/CodingAgent";
 import Research from "./research/Research";
 import ScrollToTop from "./ScrollToTop";
@@ -67,7 +66,6 @@ function App() {
               <Route path="/projects/plan-pro" element={<PlanPro />} />
               <Route path="/projects/deepscan" element={<DeepScan />} />
               <Route path="/projects/rpe10" element={<RPE10 />} />
-              <Route path="/projects/byte2bite" element={<Byte2Bite />} />
               <Route path="/projects/coding-agent" element={<CodingAgent />} />
               <Route path="/research" element={<Research />} />
             </Routes>
