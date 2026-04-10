@@ -17,7 +17,7 @@ const RPE10 = () => {
         allowFullScreen
       ></iframe>
 
-      <div className="RPE10-desc">
+      <div className="project-desc-panel">
         <p>
           RPE10 is the verified digital identity for competitive powerlifters.
           Track your PRs, build shareable meet recaps, and earn recognition that
@@ -26,10 +26,7 @@ const RPE10 = () => {
           complete with badges, totals, and federation-verified stats. Built for
           powerlifters. Backed by data. Powered by community.
         </p>
-        <p>
-          Currently in beta testing with around 20 users. Expecting to launch in
-          December 2025.
-        </p>
+        <p>Currently in beta testing with around 20 users.</p>
       </div>
     </div>
   );

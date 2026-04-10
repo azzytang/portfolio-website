@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.css";
 
 const About = () => {
@@ -13,13 +12,14 @@ const About = () => {
             <img className="arrow" src="about_arrow.png"></img>
           </div>
         </div>
-        <div className="About-desc">
+        <div className="About-desc project-desc-panel">
           <p>
             Hi! I am currently studying Computer Science at the Texas Academy of
-            Mathematics and Science.
+            Mathematics and Science. I am 90% committed to CS @ UT Austin and
+            will an incoming freshman there next fall.
           </p>
           <p>
-            I have been coding for 3 years and enjoy participating in coding
+            I have been coding for 5 years and enjoy participating in coding
             competitions & hackathons, and competing to FTC Robotics. Creating
             websites, games, etc. are also passions of mine, as it allows me to
             apply my knowledge to something real that people can experience and
@@ -28,8 +28,8 @@ const About = () => {
           </p>
 
           <p>
-            Aside from coding, I also love to weightlift, bike, cook, play
-            sports, and hangout with friends.
+            Aside from coding, I compete in powerlifting and enjoy biking,
+            cooking, and hanging out with friends.
           </p>
         </div>
       </div>

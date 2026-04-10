@@ -42,18 +42,6 @@
   transform: translateY(-2px);
 }
 
-.RPE10-desc {
-  font-size: 20px;
-  max-width: 60vw;
-
-  background-color: var(--color-purple);
-  padding: 1.5rem;
-}
-
-.RPE10-desc p {
-  margin: 0;
-}
-
 .RPE10 iframe {
   border: none;
   margin: 0 0 3rem 0;
@@ -69,20 +57,9 @@
   .RPE10 h3 {
     font-size: 17px;
   }
-  .RPE10-desc {
-    font-size: 17px;
-  }
-
   .RPE10 iframe {
     width: 70vw;
     height: 43.75vw;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .RPE10-desc {
-    font-size: 12px;
-    padding: 1rem;
   }
 }
 

@@ -23,32 +23,6 @@
   font-weight: 550;
 }
 
-.StickmanLife-desc {
-  font-size: 20px;
-  max-width: 60vw;
-  /* position: relative;
-  float: left; */
-  background-color: var(--color-purple);
-  padding: 1.5rem;
-  /* border-radius: 20px; */
-}
-
-.StickmanLife-desc p {
-  text-align: center;
-  /* z-index: 100; */
-  margin: 0;
-  /* margin: 1rem 0 0 0; */
-  /* position: relative;
-  float: left; */
-}
-
-/* .StickmanLife-desc img {
-  max-width: 70vw;
-  position: absolute;
-  left: -2.6rem;
-  top: -3rem;
-  z-index: 0;
-} */
 .StickmanLife-button {
   color: white;
   cursor: pointer;
@@ -83,10 +57,6 @@
   .StickmanLife h3 {
     font-size: 17px;
   }
-  .StickmanLife-desc {
-    font-size: 17px;
-  }
-
   .StickmanLife iframe {
     width: 70vw;
     height: 39.32vw;
@@ -94,11 +64,6 @@
 }
 
 @media screen and (max-width: 550px) {
-  .StickmanLife-desc {
-    font-size: 12px;
-    padding: 1rem;
-    max-width: 65vw;
-  }
   .StickmanLife {
     margin: 0 0 0 0;
   }

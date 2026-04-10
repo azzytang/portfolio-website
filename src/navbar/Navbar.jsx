@@ -37,12 +37,6 @@ const Navbar = () => {
             <img src="navbar_highlight.png" style={{ width: "7rem" }}></img>
           </div>
         </Link>
-        <Link to="/contact">
-          <div className="Navbar-link">
-            <p>contact</p>
-            <img src="navbar_highlight2.png" style={{ width: "9rem" }}></img>
-          </div>
-        </Link>
         <Link to="/projects">
           <div className="Navbar-link">
             <p>projects</p>
@@ -103,16 +97,6 @@ const Navbar = () => {
                 onClick={handleLinkClick}
               >
                 about
-              </Link>
-            </p>
-
-            <p>
-              <Link
-                className="Navbar-menu_link"
-                to="/contact"
-                onClick={handleLinkClick}
-              >
-                contact
               </Link>
             </p>
 

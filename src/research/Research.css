@@ -4,27 +4,26 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 70vh;
 }
 
-.Research h1 {
+.Research-intro {
+  text-align: center;
+  max-width: 44rem;
+  width: 100%;
+}
+
+.Research-intro h1 {
   font-size: 50px;
   line-height: 3rem;
-  margin-bottom: 0;
+  margin: 0 0 0.65rem;
 }
 
-.Research h3 {
-  font-size: 20px;
+.Research-role {
+  font-size: 19px;
   font-weight: 500;
-  line-height: 1rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.Research h2 {
-  font-size: 30px;
-  font-weight: 550;
-  margin-bottom: 1rem;
+  line-height: 1.45;
+  margin: 0 0 2.5rem;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .Research-button {
@@ -61,15 +60,122 @@
   margin: 0 0 3rem 0;
 }
 
+.Research-content {
+  width: 100%;
+  max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.75rem;
+  margin: 0 0 3rem;
+}
+
+.Research-publication-card {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.55;
+  padding: 1.75rem 2rem;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.Research-pub-venue {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-pink);
+}
+
+.Research-publication-card h3.Research-pub-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+.Research-pub-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.Research-pub-list li {
+  margin: 0 0 0.5rem;
+}
+
+.Research-pub-list li:last-child {
+  margin-bottom: 0;
+}
+
+.Research-pub-actions {
+  margin: 1.35rem 0 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  font-weight: 500;
+}
+
+.Research-publication-card a {
+  color: var(--color-pink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.Research-publication-card a:hover {
+  color: #fff;
+}
+
+.Research-inprogress {
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.55;
+  padding: 1.5rem 1.75rem;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.Research-inprogress-label {
+  margin: 0 0 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-pink);
+}
+
+.Research-inprogress-text {
+  margin: 0;
+}
+
 @media screen and (max-width: 950px) {
-  .Research h1 {
+  .Research-intro h1 {
     font-size: 40px;
+    line-height: 2.5rem;
   }
-  .Research h2 {
-    font-size: 20px;
-  }
-  .Research h3 {
+
+  .Research-role {
     font-size: 17px;
+    padding: 0 0.5rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .Research-content {
+    max-width: 85vw;
+    gap: 1.25rem;
+  }
+
+  .Research-publication-card {
+    font-size: 16px;
+    padding: 1.35rem 1.25rem;
+  }
+
+  .Research-publication-card h3.Research-pub-title {
+    font-size: 1.05rem;
+  }
+
+  .Research-inprogress {
+    font-size: 15px;
+    padding: 1.25rem 1.25rem;
   }
   .Research-desc {
     font-size: 17px;

@@ -24,7 +24,7 @@ const PlanPro = () => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
-      <div className="PlanPro-desc">
+      <div className="project-desc-panel">
         <p>
           PlanPro is a super simple todo list maker/planner. It was created for
           the Kode with Klossy summer camp to learn Swift/SwiftUI. In the

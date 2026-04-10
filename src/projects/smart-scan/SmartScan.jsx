@@ -18,7 +18,7 @@ const SmartScan = () => {
         <img src="/smart_scan3.png" alt="slide1"></img>
         <img src="/smart_scan2.png" alt="slide2"></img>
       </div>
-      <div className="SmartScan-desc">
+      <div className="project-desc-panel">
         <p>
           SmartScan Attendance was created for my 2023-2024 Science/Engineering
           Fair project. This app & website takes attendance for the teacher by

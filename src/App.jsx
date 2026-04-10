@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import Navbar from "./navbar/Navbar";
 import About from "./about/About";
-import Contact from "./contact/Contact";
 import Home from "./home/Home";
 import Footer from "./footer/Footer";
 import Projects from "./projects/Projects";
@@ -12,6 +11,7 @@ import PlanPro from "./projects/plan-pro/PlanPro";
 import DeepScan from "./projects/deepscan/DeepScan";
 import RPE10 from "./projects/rpe10/RPE10";
 import CodingAgent from "./projects/coding-agent/CodingAgent";
+import AutonomousAirRacing from "./projects/autonomous-air-racing/AutonomousAirRacing";
 import Research from "./research/Research";
 import ScrollToTop from "./ScrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -50,25 +50,30 @@ function App() {
         ) : (
           <div className="App">
             <Navbar />
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route
-                path="/projects/stickman-life"
-                element={<StickmanLife />}
-              />
-              <Route
-                path="/projects/smart-scan-attendance"
-                element={<SmartScan />}
-              />
-              <Route path="/projects/plan-pro" element={<PlanPro />} />
-              <Route path="/projects/deepscan" element={<DeepScan />} />
-              <Route path="/projects/rpe10" element={<RPE10 />} />
-              <Route path="/projects/coding-agent" element={<CodingAgent />} />
-              <Route path="/research" element={<Research />} />
-            </Routes>
+            <main className="App-main">
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route
+                  path="/projects/stickman-life"
+                  element={<StickmanLife />}
+                />
+                <Route
+                  path="/projects/smart-scan-attendance"
+                  element={<SmartScan />}
+                />
+                <Route path="/projects/plan-pro" element={<PlanPro />} />
+                <Route path="/projects/deepscan" element={<DeepScan />} />
+                <Route path="/projects/rpe10" element={<RPE10 />} />
+                <Route path="/projects/coding-agent" element={<CodingAgent />} />
+                <Route
+                  path="/projects/autonomous-air-racing"
+                  element={<AutonomousAirRacing />}
+                />
+                <Route path="/research" element={<Research />} />
+              </Routes>
+            </main>
             <Footer />
           </div>
         )}

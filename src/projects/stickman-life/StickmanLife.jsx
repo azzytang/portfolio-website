@@ -23,7 +23,7 @@ const StickmanLife = () => {
         allowFullScreen
       ></iframe>
 
-      <div className="StickmanLife-desc">
+      <div className="project-desc-panel">
         <p>
           Stickman Life is a "parody" of the Duck Life games that I started when
           I was a Sophomore in HS (2023). The purpose of this project was mainly

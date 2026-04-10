@@ -28,7 +28,7 @@ const CodingAgent = () => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
-      <div className="CodingAgent-desc">
+      <div className="project-desc-panel">
         <p>
           A terminal coding agent that can help you code through
           creating/editing files, answering questions, and running commands.

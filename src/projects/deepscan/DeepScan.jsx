@@ -24,7 +24,7 @@ const DeepScan = () => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
-      <div className="DeepScan-desc">
+      <div className="project-desc-panel">
         <p>
           Created for hackTAMS 2025 and got an honorable mention. A website that
           allows users to upload images to detect if it is a deepfake. Made with

@@ -10,7 +10,7 @@
   margin-bottom: 5rem;
 }
 
-.About p {
+.About-caption p {
   font-size: 20px;
   max-width: 50vw;
 }
@@ -43,14 +43,10 @@
   position: relative;
 }
 
-.About-desc {
-  font-size: 40px;
+.About-desc.project-desc-panel {
   max-width: 30vw;
-
-  background-color: var(--color-purple);
-  padding: 2rem 3rem 3rem 3rem;
-
-  /* box-shadow: 0 0 10px 0 rgb(160, 193, 235); */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1600px) {
@@ -59,7 +55,7 @@
   }
 }
 @media screen and (max-width: 1300px) {
-  .About-desc {
+  .About-desc.project-desc-panel {
     max-width: 40vw;
   }
 
@@ -83,8 +79,7 @@
   .About h1 {
     font-size: 40px;
   }
-  .About-desc {
-    font-size: 20px;
+  .About-desc.project-desc-panel {
     max-width: 60vw;
   }
 
@@ -106,12 +101,11 @@
 }
 
 @media screen and (max-width: 600px) {
-  .About-desc {
+  .About-desc.project-desc-panel {
     max-width: 70vw;
-
-    padding: 1rem 2rem 2rem 2rem;
   }
-  .About p {
+
+  .About-caption p {
     font-size: 15px;
   }
   .About-image {
@@ -128,10 +122,10 @@
   }
 }
 @media screen and (max-width: 440px) {
-  .About-desc {
-    padding: 0.5rem 2rem 0.5rem 2rem;
+  .About-desc.project-desc-panel {
     max-width: 90vw;
-    margin: 0 0 0 0;
+    margin: 0;
+    font-size: 14px;
   }
   .About-container {
     margin: 0 0 0 0;
@@ -144,7 +138,4 @@
     margin: 0 0 0 1rem;
   }
 
-  .About-desc p {
-    font-size: 12px;
-  }
 }
