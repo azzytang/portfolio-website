@@ -14,15 +14,13 @@ const About = () => {
         </div>
         <div className="About-desc project-desc-panel">
           <p>
-            Hi! I am currently studying Computer Science at the Texas Academy of
-            Mathematics and Science. I am 90% committed to CS @ UT Austin and
-            will an incoming freshman there next fall.
+            Hi! I am a freshman at UT Austin majoring in Computer Science. I also previously attended the Texas Academy of Math and Science (TAMS)
           </p>
           <p>
-            I have been coding for 5 years and enjoy participating in coding
-            competitions & hackathons, and competing to FTC Robotics. Creating
+            I have been coding for 5+ years and enjoy participating in coding
+            competitions & hackathons and competing to FTC Robotics. Creating
             websites, games, etc. are also passions of mine, as it allows me to
-            apply my knowledge to something real that people can experience and
+            apply my knowledge and interests to something real that people can experience and
             interact with. You can see the projects I have finished or are
             working on here.
           </p>
