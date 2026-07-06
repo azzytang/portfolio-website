@@ -6,7 +6,6 @@ const StickmanLife = () => {
   return (
     <div className="StickmanLife">
       <h1>Stickman Life</h1>
-      <h3>Status: In Progress</h3>
       <a
         href="https://github.com/azzytang/stickman-life"
         target="_blank"

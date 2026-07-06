@@ -5,7 +5,6 @@ const CodingAgent = () => {
   return (
     <div className="CodingAgent">
       <h1>Coding Agent</h1>
-      <h3>Status: In Progress</h3>
 
       <h2>Video Demo:</h2>
 

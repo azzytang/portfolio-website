@@ -6,7 +6,6 @@ const PlanPro = () => {
   return (
     <div className="PlanPro">
       <h1>PlanPro</h1>
-      <h3>Status: prob wont finish</h3>
       <a
         href="https://github.com/azzytang/PlanPro"
         target="_blank"

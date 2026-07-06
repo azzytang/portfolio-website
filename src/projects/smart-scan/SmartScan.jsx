@@ -6,7 +6,6 @@ const SmartScan = () => {
   return (
     <div className="SmartScan">
       <h1>SmartScan Attendance</h1>
-      <h3>Status: Finished? (a lot of improvements can be made)</h3>
       <a
         href="https://github.com/azzytang/smart-scan-attendance"
         target="_blank"

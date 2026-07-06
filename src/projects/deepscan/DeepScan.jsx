@@ -6,7 +6,6 @@ const DeepScan = () => {
   return (
     <div className="DeepScan">
       <h1>DeepScan Intelligence</h1>
-      <h3>Status: Finished? (room for improvement)</h3>
       <a
         href="https://github.com/azzytang/DeepScan-Intelligence"
         target="_blank"

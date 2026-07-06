@@ -4,7 +4,6 @@ const RPE10 = () => {
   return (
     <div className="RPE10">
       <h1>RPE10</h1>
-      <h3>Status: MVP in progress</h3>
 
       <h2>Video Demo:</h2>
       <iframe
