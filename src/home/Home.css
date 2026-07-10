@@ -34,6 +34,22 @@
   margin: 0 0 1rem 0;
   font-size: 20px;
 }
+
+.typewriter-text {
+  display: block;
+}
+
+.typewriter-char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.25rem);
+  animation: typeIn 0.18s ease-out forwards;
+}
+
+.Home h2.typewriter-text {
+  max-width: min(60rem, 90vw);
+}
+
 .Home p {
   color: white;
   cursor: pointer;
@@ -131,5 +147,16 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes typeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0.25rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -23,8 +23,10 @@ const Navbar = () => {
           <div className="Navbar-logo">
             <img
               className="Navbar-logo1"
-              src="azalea_flower.png"
+              src="optimized/azalea_flower-96.webp"
               alt="logo"
+              decoding="async"
+              fetchPriority="high"
             ></img>
             <p>AT</p>
           </div>

@@ -7,40 +7,78 @@
 
 .About h1 {
   font-size: 50px;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .About-caption p {
-  font-size: 20px;
+  font-size: 16px;
   max-width: 50vw;
 }
 
+.About-photoBlock {
+  position: relative;
+  margin: 0 clamp(3rem, 7vw, 7rem) 0 0;
+  padding: 0.9rem 0.9rem 2.4rem;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(154, 107, 80, 0.08), transparent 24%),
+    radial-gradient(circle at 82% 82%, rgba(159, 102, 90, 0.08), transparent 28%),
+    repeating-linear-gradient(
+      7deg,
+      rgba(92, 66, 54, 0.022) 0,
+      rgba(92, 66, 54, 0.022) 1px,
+      transparent 1px,
+      transparent 7px
+    ),
+    linear-gradient(105deg, #fff8e6, #f7e8d7 48%, #fff3df);
+  border: 1px solid rgba(112, 83, 66, 0.2);
+  border-radius: 6px 8px 7px 5px;
+  box-shadow: 0 18px 38px rgba(48, 40, 70, 0.24);
+  transform: rotate(-1.2deg);
+}
+
+.About-photoBlock::before {
+  content: "";
+  position: absolute;
+  top: -0.9rem;
+  left: 50%;
+  width: 5.5rem;
+  height: 1.45rem;
+  border-radius: 1px 3px 2px 1px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(127, 97, 58, 0.05) 0,
+      rgba(127, 97, 58, 0.05) 1px,
+      transparent 1px,
+      transparent 8px
+    ),
+    rgba(245, 222, 157, 0.5);
+  box-shadow: 0 1px 4px rgba(73, 47, 52, 0.1);
+  transform: translateX(-50%) rotate(2deg);
+  pointer-events: none;
+  z-index: 2;
+}
+
 .About-image {
-  height: 35rem;
-  margin: 0 10rem 0 0;
-  /* border-radius: 10px; */
-  border-width: 5px;
-  border-color: var(--color-pink);
-  border-style: solid;
-  /* box-shadow: 0 0 10px 0 rgb(160, 193, 235); */
+  display: block;
+  height: 24rem;
+  margin: 0;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(96, 70, 80, 0.18),
+    0 8px 20px rgba(55, 42, 58, 0.16);
 }
 
 .About-container {
   display: flex;
   flex-direction: row;
-  align-items: start;
-}
-
-.arrow {
-  position: absolute;
-  left: 11.5rem;
-  top: -13rem;
-  width: 6rem;
-  height: 14rem;
+  align-items: flex-start;
 }
 
 .About-caption {
   position: relative;
+  color: #49374f;
+  padding: 0.65rem 0.35rem 0;
 }
 
 .About-desc.project-desc-panel {
@@ -51,7 +89,7 @@
 
 @media screen and (max-width: 1600px) {
   .About-image {
-    height: 35rem;
+    height: 24rem;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -59,15 +97,14 @@
     max-width: 40vw;
   }
 
-  .About-image {
-    height: 25rem;
-    margin: 0 4rem 0 0;
+  .About-photoBlock {
+    margin: 0 3rem 0 0;
+    padding: 0.75rem 0.75rem 2rem;
   }
-  .arrow {
-    left: 9rem;
-    top: -10rem;
-    height: 11rem;
-    width: 7rem;
+
+  .About-image {
+    height: 18rem;
+    margin: 0;
   }
 }
 
@@ -83,18 +120,15 @@
     max-width: 60vw;
   }
 
+  .About-photoBlock {
+    margin: 0 0 2.5rem;
+  }
+
   .About-image {
-    width: 25rem;
+    width: 18rem;
     height: auto;
     margin: 0;
   }
-  .arrow {
-    left: 10rem;
-    top: -12rem;
-    height: 14rem;
-    width: 6rem;
-  }
-
   .About-caption {
     margin: 0 0 0 3rem;
   }
@@ -106,17 +140,13 @@
   }
 
   .About-caption p {
-    font-size: 15px;
+    font-size: 13px;
   }
   .About-image {
-    width: 60vw;
+    width: 48vw;
     height: auto;
     margin: 0;
   }
-  .arrow {
-    display: none;
-  }
-
   .About-caption {
     margin: 0 0 0 1rem;
   }

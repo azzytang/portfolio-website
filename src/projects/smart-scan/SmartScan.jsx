@@ -14,8 +14,18 @@ const SmartScan = () => {
         <p className="SmartScan-button">github repo</p>
       </a>
       <div className="SmartScan-imgs">
-        <img src="/smart_scan3.png" alt="slide1"></img>
-        <img src="/smart_scan2.png" alt="slide2"></img>
+        <img
+          src="/optimized/smart_scan3-detail.webp"
+          alt="slide1"
+          decoding="async"
+          fetchPriority="high"
+        ></img>
+        <img
+          src="/optimized/smart_scan2-detail.webp"
+          alt="slide2"
+          decoding="async"
+          loading="lazy"
+        ></img>
       </div>
       <div className="project-desc-panel">
         <p>

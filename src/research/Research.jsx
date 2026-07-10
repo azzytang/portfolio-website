@@ -23,11 +23,11 @@ const Research = () => {
               asymmetry and speech analysis
             </li>
             <li>
-              Runs entirely on-device using CoreML (low latency and
-              privacy-preserving)
+              Runs entirely on device using CoreML (low latency and privacy
+              preserving)
             </li>
             <li>
-              Achieved real-time inference using lightweight computer vision and
+              Achieved realtime inference using lightweight computer vision and
               audio models
             </li>
             <li>
@@ -48,7 +48,7 @@ const Research = () => {
         <div className="Research-inprogress">
           <p className="Research-inprogress-label">In progress</p>
           <p className="Research-inprogress-text">
-            Second paper (submission June 2026) on memory-efficient semantic
+            Second paper (currently under review) on memory efficient semantic
             segmentation for plant disease detection on edge devices.
           </p>
         </div>

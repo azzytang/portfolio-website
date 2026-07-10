@@ -54,7 +54,7 @@ body {
   min-height: 100dvh;
 }
 
-/* Project detail pages — matches research publication panels */
+/* Project detail pages — scrapbook paper note */
 .project-desc-panel {
   font-size: 18px;
   line-height: 1.55;
@@ -63,7 +63,57 @@ body {
   box-sizing: border-box;
   text-align: left;
   padding: 1.75rem 2rem;
-  background-color: rgba(255, 255, 255, 0.06);
+  color: #49374f;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(154, 107, 80, 0.08), transparent 22%),
+    radial-gradient(circle at 82% 12%, rgba(255, 255, 255, 0.42), transparent 26%),
+    radial-gradient(circle at 78% 84%, rgba(159, 102, 90, 0.08), transparent 28%),
+    repeating-linear-gradient(
+      7deg,
+      rgba(92, 66, 54, 0.025) 0,
+      rgba(92, 66, 54, 0.025) 1px,
+      transparent 1px,
+      transparent 7px
+    ),
+    linear-gradient(105deg, #fff8e6, #f7e8d7 48%, #fff3df);
+  border: 1px solid rgba(112, 83, 66, 0.2);
+  border-radius: 5px 8px 6px 7px;
+  box-shadow: 0 16px 34px rgba(48, 40, 70, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.45) inset;
+  position: relative;
+}
+
+.project-desc-panel::before {
+  content: "";
+  position: absolute;
+  top: -0.75rem;
+  left: 2rem;
+  width: 4.8rem;
+  height: 1.35rem;
+  border-radius: 1px 3px 2px 1px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(127, 97, 58, 0.05) 0,
+      rgba(127, 97, 58, 0.05) 1px,
+      transparent 1px,
+      transparent 8px
+    ),
+    rgba(245, 222, 157, 0.48);
+  box-shadow: 0 1px 4px rgba(73, 47, 52, 0.1);
+  transform: rotate(-3deg);
+  pointer-events: none;
+}
+
+.project-desc-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(90deg, rgba(120, 83, 66, 0.08), transparent 0.65rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent 38%);
+  pointer-events: none;
 }
 
 .project-desc-panel p {

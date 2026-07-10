@@ -5,9 +5,9 @@ import About from "./about/About";
 import Home from "./home/Home";
 import Footer from "./footer/Footer";
 import Projects from "./projects/Projects";
-import StickmanLife from "./projects/stickman-life/StickmanLife";
+// import StickmanLife from "./projects/stickman-life/StickmanLife";
 import SmartScan from "./projects/smart-scan/SmartScan";
-import PlanPro from "./projects/plan-pro/PlanPro";
+// import PlanPro from "./projects/plan-pro/PlanPro";
 import DeepScan from "./projects/deepscan/DeepScan";
 import RPE10 from "./projects/rpe10/RPE10";
 import CodingAgent from "./projects/coding-agent/CodingAgent";
@@ -21,10 +21,13 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // Set the background image as a CSS variable
     document.documentElement.style.setProperty(
       "--background-image",
-      `url(${import.meta.env.BASE_URL}clouds_bg_extended.png)`
+      `url(${import.meta.env.BASE_URL}optimized/story-sky-bg-cloud-edge.webp)`
+    );
+    document.documentElement.style.setProperty(
+      "--background-image-soft",
+      `url(${import.meta.env.BASE_URL}optimized/story-sky-bg-cloud-edge-soft.webp)`
     );
 
     window.onload = () => {
@@ -55,15 +58,15 @@ function App() {
                 <Route exact path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
-                <Route
+                {/* <Route
                   path="/projects/stickman-life"
                   element={<StickmanLife />}
-                />
+                /> */}
                 <Route
                   path="/projects/smart-scan-attendance"
                   element={<SmartScan />}
                 />
-                <Route path="/projects/plan-pro" element={<PlanPro />} />
+                {/* <Route path="/projects/plan-pro" element={<PlanPro />} /> */}
                 <Route path="/projects/deepscan" element={<DeepScan />} />
                 <Route path="/projects/rpe10" element={<RPE10 />} />
                 <Route path="/projects/coding-agent" element={<CodingAgent />} />

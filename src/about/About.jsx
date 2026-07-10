@@ -5,11 +5,16 @@ const About = () => {
     <div className="About">
       <h1>about</h1>
       <div className="About-container">
-        <div>
-          <img className="About-image" src="azalea1.png" alt="me"></img>
+        <div className="About-photoBlock">
+          <img
+            className="About-image"
+            src="optimized/azalea1-900.webp"
+            alt="me"
+            decoding="async"
+            fetchPriority="high"
+          ></img>
           <div className="About-caption">
             <p>1st @ digital divas comp</p>
-            <img className="arrow" src="about_arrow.png"></img>
           </div>
         </div>
         <div className="About-desc project-desc-panel">

@@ -75,7 +75,57 @@
   font-size: 18px;
   line-height: 1.55;
   padding: 1.75rem 2rem;
-  background-color: rgba(255, 255, 255, 0.06);
+  color: #49374f;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(154, 107, 80, 0.08), transparent 22%),
+    radial-gradient(circle at 82% 12%, rgba(255, 255, 255, 0.42), transparent 26%),
+    radial-gradient(circle at 78% 84%, rgba(159, 102, 90, 0.08), transparent 28%),
+    repeating-linear-gradient(
+      7deg,
+      rgba(92, 66, 54, 0.025) 0,
+      rgba(92, 66, 54, 0.025) 1px,
+      transparent 1px,
+      transparent 7px
+    ),
+    linear-gradient(105deg, #fff8e6, #f7e8d7 48%, #fff3df);
+  border: 1px solid rgba(112, 83, 66, 0.2);
+  border-radius: 5px 8px 6px 7px;
+  box-shadow: 0 16px 34px rgba(48, 40, 70, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.45) inset;
+  position: relative;
+}
+
+.Research-publication-card::before {
+  content: "";
+  position: absolute;
+  top: -0.75rem;
+  left: 2rem;
+  width: 4.8rem;
+  height: 1.35rem;
+  border-radius: 1px 3px 2px 1px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(127, 97, 58, 0.05) 0,
+      rgba(127, 97, 58, 0.05) 1px,
+      transparent 1px,
+      transparent 8px
+    ),
+    rgba(245, 222, 157, 0.48);
+  box-shadow: 0 1px 4px rgba(73, 47, 52, 0.1);
+  transform: rotate(-3deg);
+  pointer-events: none;
+}
+
+.Research-publication-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(90deg, rgba(120, 83, 66, 0.08), transparent 0.65rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent 38%);
+  pointer-events: none;
 }
 
 .Research-pub-venue {
@@ -84,7 +134,7 @@
   font-weight: 600;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--color-pink);
+  color: #b76c7a;
 }
 
 .Research-publication-card h3.Research-pub-title {
@@ -111,19 +161,19 @@
 .Research-pub-actions {
   margin: 1.35rem 0 0;
   padding-top: 1.1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 1px solid rgba(126, 91, 101, 0.18);
   font-weight: 500;
 }
 
 .Research-publication-card a {
-  color: var(--color-pink);
+  color: #9f5669;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .Research-publication-card a:hover {
-  color: #fff;
+  color: #6c3c65;
 }
 
 .Research-inprogress {
@@ -131,7 +181,22 @@
   font-size: 17px;
   line-height: 1.55;
   padding: 1.5rem 1.75rem;
-  background-color: rgba(255, 255, 255, 0.04);
+  color: #49374f;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(154, 107, 80, 0.08), transparent 22%),
+    radial-gradient(circle at 80% 82%, rgba(159, 102, 90, 0.07), transparent 28%),
+    repeating-linear-gradient(
+      7deg,
+      rgba(92, 66, 54, 0.022) 0,
+      rgba(92, 66, 54, 0.022) 1px,
+      transparent 1px,
+      transparent 7px
+    ),
+    linear-gradient(105deg, #fff8e6, #f7e8d7 48%, #fff3df);
+  border: 1px solid rgba(112, 83, 66, 0.18);
+  border-radius: 5px 8px 6px 7px;
+  box-shadow: 0 14px 30px rgba(48, 40, 70, 0.16);
+  position: relative;
 }
 
 .Research-inprogress-label {
@@ -140,7 +205,7 @@
   font-weight: 600;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--color-pink);
+  color: #b76c7a;
 }
 
 .Research-inprogress-text {

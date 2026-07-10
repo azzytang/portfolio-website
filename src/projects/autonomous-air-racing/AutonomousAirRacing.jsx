@@ -14,10 +14,17 @@ const AutonomousAirRacing = () => {
       </a>
 
       <div className="AutonomousAirRacing-imgs">
-        <img src="/bwsi.jpg" alt="MIT Beaver Works Summer Institute" />
         <img
-          src="/bwsi2.jpg"
+          src="/optimized/bwsi-detail.webp"
+          alt="MIT Beaver Works Summer Institute"
+          decoding="async"
+          fetchPriority="high"
+        />
+        <img
+          src="/optimized/bwsi2-detail.webp"
           alt="MIT Beaver Works Summer Institute — additional photo"
+          decoding="async"
+          loading="lazy"
         />
       </div>
 
@@ -29,6 +36,7 @@ const AutonomousAirRacing = () => {
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
+        loading="lazy"
         allowFullScreen
       ></iframe>
 

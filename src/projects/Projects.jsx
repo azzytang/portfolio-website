@@ -6,53 +6,53 @@ const PROJECTS = [
     key: "autonomous-air-racing",
     to: "/projects/autonomous-air-racing",
     title: "Autonomous Air Racing @ MIT Beaver Works Summer Institute",
-    image: "bwsi.jpg",
+    image: "optimized/bwsi-card.webp",
   },
   {
     key: "coding-agent",
     to: "/projects/coding-agent",
     title: "Coding Agent",
-    image: "coding_agent1.jpg",
+    image: "optimized/coding_agent1-card.webp",
   },
   {
     key: "rpe10",
     to: "/projects/rpe10",
     title: "RPE10",
-    image: "rpe10.png",
+    image: "optimized/rpe10-card.webp",
   },
   {
     key: "deepscan",
     to: "/projects/deepscan",
     title: "DeepScan Intelligence",
-    image: "deepscan.png",
+    image: "optimized/deepscan-card.webp",
   },
-  {
-    key: "stickman-life",
-    to: "/projects/stickman-life",
-    title: "Stickman Life",
-    image: "stickman_life1.png",
-    hoverImage: "stickman_life2.png",
-  },
+  // {
+  //   key: "stickman-life",
+  //   to: "/projects/stickman-life",
+  //   title: "Stickman Life",
+  //   image: "optimized/stickman_life1-card.webp",
+  //   hoverImage: "optimized/stickman_life2-card.webp",
+  // },
   {
     key: "smart-scan",
     to: "/projects/smart-scan-attendance",
     title: "SmartScan Attendance",
-    image: "smart_scan1.png",
-    hoverImage: "smart_scan2.png",
+    image: "optimized/smart_scan1-card.webp",
+    hoverImage: "optimized/smart_scan2-card.webp",
   },
   {
     key: "massage",
     href: "https://shirleymassagetherapy.com/",
     title: "Massage Therapy Business Website",
-    image: "massage_website1.png",
-    hoverImage: "massage_website2.png",
+    image: "optimized/massage_website1-card.webp",
+    hoverImage: "optimized/massage_website2-card.webp",
   },
-  {
-    key: "plan-pro",
-    to: "/projects/plan-pro",
-    title: "PlanPro",
-    image: "plan_pro1.png",
-  },
+  // {
+  //   key: "plan-pro",
+  //   to: "/projects/plan-pro",
+  //   title: "PlanPro",
+  //   image: "optimized/plan_pro1-card.webp",
+  // },
 ];
 
 const Projects = () => {
@@ -60,7 +60,8 @@ const Projects = () => {
     <div className="Projects">
       <h1>projects</h1>
       <div className="Projects-grid">
-        {PROJECTS.map((p) => {
+        {PROJECTS.map((p, index) => {
+          const isPriority = index < 3;
           const body = (
             <>
               <div className="Projects-card-media">
@@ -69,6 +70,9 @@ const Projects = () => {
                     className="Projects-card-img Projects-card-img--primary"
                     src={p.image}
                     alt={`${p.title} preview`}
+                    loading={isPriority ? "eager" : "lazy"}
+                    decoding="async"
+                    fetchPriority={isPriority ? "high" : "auto"}
                   />
                   {p.hoverImage ? (
                     <img
@@ -76,6 +80,8 @@ const Projects = () => {
                       src={p.hoverImage}
                       alt=""
                       aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
                     />
                   ) : null}
                 </div>

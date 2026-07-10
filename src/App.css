@@ -6,41 +6,78 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  background-color: rgb(61, 72, 125);
+  isolation: isolate;
 }
 
 .moving-background {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(55, 65, 116);
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.moving-background::before {
+  content: "";
   position: absolute;
   top: 0;
-  left: -250px;
-  right: -250px;
-  bottom: 0;
-  background-image: var(--background-image);
-  background-size: 200%;
-  background-position: top left;
+  left: -200vw;
+  width: 400vw;
+  height: 124%;
+  background-image: var(
+    --background-image-soft,
+    url("/optimized/story-sky-bg-cloud-edge-soft.webp")
+  );
+  background-size: 200vw 100%;
+  background-position: center top;
   background-repeat: repeat-x;
-  z-index: -1;
-  animation: moveBackground 140s linear infinite;
-  height: 100%;
-  width: calc(100% + 500px);
+  animation: moveBackgroundFar 220s linear infinite;
+  filter: saturate(0.74) brightness(0.9);
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
 }
 
 .moving-background::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(25, 25, 112, 0.4);
+  top: -4vh;
+  left: -200vw;
+  width: 400vw;
+  height: 128%;
+  background-image: var(
+    --background-image,
+    url("/optimized/story-sky-bg-cloud-edge.webp")
+  );
+  background-size: 200vw 100%;
+  background-position: center top;
+  background-repeat: repeat-x;
+  opacity: 0.68;
+  animation: moveBackgroundNear 145s linear infinite;
+  filter: saturate(0.78) brightness(0.92);
+  will-change: transform;
   pointer-events: none;
 }
 
-@keyframes moveBackground {
+@keyframes moveBackgroundFar {
   0% {
-    background-position: 0% top;
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    background-position: 200% top;
+    transform: translate3d(200vw, 0, 0);
+  }
+}
+
+@keyframes moveBackgroundNear {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(200vw, 0, 0);
   }
 }
 
