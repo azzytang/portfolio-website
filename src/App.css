@@ -13,7 +13,7 @@
 .moving-background {
   position: fixed;
   inset: 0;
-  --sky-tile-width: 430dvh;
+  --sky-tile-width: 465dvh;
   background-color: rgb(82, 82, 119);
   z-index: 0;
   width: 100vw;
