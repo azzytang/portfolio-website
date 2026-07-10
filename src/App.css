@@ -6,15 +6,15 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  background-color: rgb(61, 72, 125);
+  background-color: rgb(95, 92, 128);
   isolation: isolate;
 }
 
 .moving-background {
   position: fixed;
   inset: 0;
-  --sky-tile-width: max(1800px, 260vh);
-  background-color: rgb(55, 65, 116);
+  --sky-tile-width: 430dvh;
+  background-color: rgb(82, 82, 119);
   z-index: 0;
   width: 100vw;
   height: 100vh;
@@ -29,16 +29,20 @@
   top: 0;
   left: calc(-1 * var(--sky-tile-width));
   width: calc(100vw + (var(--sky-tile-width) * 2));
-  height: 124%;
-  background-image: var(
-    --background-image-soft,
-    url("/optimized/story-sky-bg-cloud-edge-soft.webp")
-  );
-  background-size: var(--sky-tile-width) 100%;
-  background-position: center top;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(96, 94, 132, 0.14), rgba(96, 94, 132, 0.14)),
+    var(
+      --background-image-soft,
+      url("/optimized/story-sky-bg-long-edge-seam-10-soft.webp")
+    );
+  background-blend-mode: soft-light;
+  background-size: var(--sky-tile-width) auto;
+  background-position: left top;
   background-repeat: repeat-x;
   animation: moveBackgroundFar 220s linear infinite;
-  filter: saturate(0.74) brightness(0.9);
+  opacity: 0.3;
+  filter: saturate(0.58) brightness(0.9);
   will-change: transform;
   transform: translate3d(0, 0, 0);
 }
@@ -46,20 +50,23 @@
 .moving-background::after {
   content: "";
   position: absolute;
-  top: -4vh;
+  top: 0;
   left: calc(-1 * var(--sky-tile-width));
   width: calc(100vw + (var(--sky-tile-width) * 2));
-  height: 128%;
-  background-image: var(
-    --background-image,
-    url("/optimized/story-sky-bg-cloud-edge.webp")
-  );
-  background-size: var(--sky-tile-width) 100%;
-  background-position: center top;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(95, 92, 128, 0.22), rgba(95, 92, 128, 0.22)),
+    var(
+      --background-image,
+      url("/optimized/story-sky-bg-long-edge-seam-10.webp")
+    );
+  background-blend-mode: soft-light;
+  background-size: var(--sky-tile-width) auto;
+  background-position: left top;
   background-repeat: repeat-x;
-  opacity: 0.68;
+  opacity: 0.82;
   animation: moveBackgroundNear 145s linear infinite;
-  filter: saturate(0.78) brightness(0.92);
+  filter: saturate(0.66) brightness(0.94);
   will-change: transform;
   pointer-events: none;
 }

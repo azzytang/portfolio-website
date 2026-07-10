@@ -23,11 +23,11 @@ function App() {
   useEffect(() => {
     document.documentElement.style.setProperty(
       "--background-image",
-      `url(${import.meta.env.BASE_URL}optimized/story-sky-bg-cloud-edge.webp)`
+      `url(${import.meta.env.BASE_URL}optimized/story-sky-bg-long-edge-seam-10.webp)`
     );
     document.documentElement.style.setProperty(
       "--background-image-soft",
-      `url(${import.meta.env.BASE_URL}optimized/story-sky-bg-cloud-edge-soft.webp)`
+      `url(${import.meta.env.BASE_URL}optimized/story-sky-bg-long-edge-seam-10-soft.webp)`
     );
 
     window.onload = () => {

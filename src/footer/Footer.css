@@ -17,26 +17,11 @@
   color: rgba(255, 255, 255, 0.92);
 }
 
-.Footer-attributions {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  flex: 1;
-  min-width: min(100%, 14rem);
-  max-width: 42rem;
-}
-
-.Footer-attributions div,
-.Footer-attributions a {
-  font-size: 0.3em;
-  margin-right: 0.1rem;
-}
-
 .Footer-contact {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
+  align-items: flex-start;
+  text-align: left;
   gap: 0.65rem;
 }
 
@@ -88,19 +73,7 @@
   }
 }
 
-@media screen and (max-width: 560px) {
-  .Footer-attributions div,
-  .Footer-attributions a {
-    font-size: 0.4rem;
-  }
-}
-
 @media screen and (max-width: 470px) {
-  .Footer-attributions div,
-  .Footer-attributions a {
-    font-size: 0.3rem;
-  }
-
   .Footer-icons {
     width: 1.5rem;
   }
