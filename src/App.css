@@ -13,6 +13,7 @@
 .moving-background {
   position: fixed;
   inset: 0;
+  --sky-tile-width: max(1800px, 260vh);
   background-color: rgb(55, 65, 116);
   z-index: 0;
   width: 100vw;
@@ -26,14 +27,14 @@
   content: "";
   position: absolute;
   top: 0;
-  left: -200vw;
-  width: 400vw;
+  left: calc(-1 * var(--sky-tile-width));
+  width: calc(100vw + (var(--sky-tile-width) * 2));
   height: 124%;
   background-image: var(
     --background-image-soft,
     url("/optimized/story-sky-bg-cloud-edge-soft.webp")
   );
-  background-size: 200vw 100%;
+  background-size: var(--sky-tile-width) 100%;
   background-position: center top;
   background-repeat: repeat-x;
   animation: moveBackgroundFar 220s linear infinite;
@@ -46,14 +47,14 @@
   content: "";
   position: absolute;
   top: -4vh;
-  left: -200vw;
-  width: 400vw;
+  left: calc(-1 * var(--sky-tile-width));
+  width: calc(100vw + (var(--sky-tile-width) * 2));
   height: 128%;
   background-image: var(
     --background-image,
     url("/optimized/story-sky-bg-cloud-edge.webp")
   );
-  background-size: 200vw 100%;
+  background-size: var(--sky-tile-width) 100%;
   background-position: center top;
   background-repeat: repeat-x;
   opacity: 0.68;
@@ -68,7 +69,7 @@
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(200vw, 0, 0);
+    transform: translate3d(var(--sky-tile-width), 0, 0);
   }
 }
 
@@ -77,7 +78,7 @@
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(200vw, 0, 0);
+    transform: translate3d(var(--sky-tile-width), 0, 0);
   }
 }
 
