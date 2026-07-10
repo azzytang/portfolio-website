@@ -10,8 +10,8 @@
 }
 
 .azzy-home {
-  width: clamp(15rem, 31vh, 19rem);
-  height: clamp(15rem, 31vh, 19rem);
+  width: clamp(15.75rem, 33vh, 20rem);
+  height: clamp(15.75rem, 33vh, 20rem);
   border-radius: 50%;
   object-fit: cover;
   border: solid;
@@ -103,8 +103,8 @@
 
 @media screen and (max-width: 500px) {
   .azzy-home {
-    width: clamp(13.5rem, 36vh, 16.5rem);
-    height: clamp(13.5rem, 36vh, 16.5rem);
+    width: clamp(14rem, 37vh, 17rem);
+    height: clamp(14rem, 37vh, 17rem);
     border-width: 4px;
   }
   .Home h1 {
@@ -122,8 +122,8 @@
 
 @media screen and (max-width: 400px) {
   .azzy-home {
-    width: clamp(12.5rem, 34vh, 14.5rem);
-    height: clamp(12.5rem, 34vh, 14.5rem);
+    width: clamp(13rem, 35vh, 15rem);
+    height: clamp(13rem, 35vh, 15rem);
     border-width: 4px;
   }
   .Home h1 {

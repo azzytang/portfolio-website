@@ -4,6 +4,9 @@
 html {
   min-height: 100vh;
   min-height: 100dvh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 :root {
@@ -26,6 +29,12 @@ html {
   font-style: normal;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -45,13 +54,19 @@ body {
   min-width: 320px;
   min-height: 100vh;
   min-height: 100dvh;
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 #root {
   min-height: 100vh;
   min-height: 100dvh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Project detail pages — scrapbook paper note */

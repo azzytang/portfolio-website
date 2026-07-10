@@ -45,7 +45,6 @@ const PROJECTS = [
     href: "https://shirleymassagetherapy.com/",
     title: "Massage Therapy Business Website",
     image: "optimized/massage_website1-card.webp",
-    hoverImage: "optimized/massage_website2-card.webp",
   },
   // {
   //   key: "plan-pro",
